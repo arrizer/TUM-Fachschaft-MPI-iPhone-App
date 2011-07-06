@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>category_de</key>
+		<string>Internetauftritte</string>
+		<key>category_en</key>
+		<string>Homepages</string>
+		<key>links</key>
+		<array>
+			<dict>
+				<key>icon</key>
+				<string>link_fshomepage.png</string>
+				<key>subtitle_de</key>
+				<string>Homepage der FSMPI</string>
+				<key>subtitle_en</key>
+				<string>Homepage of the FSMPI</string>
+				<key>title_de</key>
+				<string>Fachschaft</string>
+				<key>title_en</key>
+				<string>Fachschaft</string>
+				<key>url_de</key>
+				<string>http://mpi.fs.tum.de/</string>
+				<key>url_en</key>
+				<string>http://mpi.fs.tum.de/</string>
+			</dict>
+			<dict>
+				<key>icon</key>
+				<string>link_intum.png</string>
+				<key>subtitle_de</key>
+				<string>Startseite der Fakultät</string>
+				<key>subtitle_en</key>
+				<string>Faculty start page</string>
+				<key>title_de</key>
+				<string>Fakultät für Informatik</string>
+				<key>title_en</key>
+				<string>Faculty of Informatics</string>
+				<key>url_de</key>
+				<string>http://in.tum.de/</string>
+				<key>url_en</key>
+				<string>http://www.in.tum.de/en.html</string>
+			</dict>
+			<dict>
+				<key>icon</key>
+				<string>link_matum.png</string>
+				<key>subtitle_de</key>
+				<string>Startseite der Fakultät</string>
+				<key>subtitle_en</key>
+				<string>Faculty start page</string>
+				<key>title_de</key>
+				<string>Fakultät für Mathematik</string>
+				<key>title_en</key>
+				<string>Department of Mathematics</string>
+				<key>url_de</key>
+				<string>http://www.ma.tum.de/Mathematik/WebHome</string>
+				<key>url_en</key>
+				<string>http://www.ma.tum.de/Mathematik/WebHomeEn</string>
+			</dict>
+			<dict>
+				<key>icon</key>
+				<string>link_phtum.png</string>
+				<key>subtitle_de</key>
+				<string>Startseite der Fakultät</string>
+				<key>subtitle_en</key>
+				<string>Faculty start page</string>
+				<key>title_de</key>
+				<string>Physik Department</string>
+				<key>title_en</key>
+				<string>Physics Department</string>
+				<key>url_de</key>
+				<string>http://www.ph.tum.de/</string>
+				<key>url_en</key>
+				<string>http://www.ph.tum.de/?language=en</string>
+			</dict>
+			<dict>
+				<key>icon</key>
+				<string>link_studentenwerk.png</string>
+				<key>subtitle_de</key>
+				<string>Mensen, Wohnen, Finanzierung, ...</string>
+				<key>subtitle_en</key>
+				<string>Canteen, Accommodation, Finances, ...</string>
+				<key>title_de</key>
+				<string>Studentenwerk München</string>
+				<key>title_en</key>
+				<string>Munich Student Union</string>
+				<key>url_de</key>
+				<string>http://www.studentenwerk-muenchen.de/</string>
+				<key>url_en</key>
+				<string>http://www.studentenwerk-muenchen.de/en/</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>category_de</key>
+		<string>Nützliches</string>
+		<key>category_en</key>
+		<string>Utilities</string>
+		<key>links</key>
+		<array>
+			<dict>
+				<key>icon</key>
+				<string>link_tumonline.png</string>
+				<key>subtitle_de</key>
+				<string>Veranstaltungs- und Klausurenverwaltung</string>
+				<key>subtitle_en</key>
+				<string>Manage classes and exams</string>
+				<key>title_de</key>
+				<string>TUM Online</string>
+				<key>title_en</key>
+				<string>TUM Online</string>
+				<key>url_de</key>
+				<string>https://campus.tum.de</string>
+				<key>url_en</key>
+				<string>https://campus.tum.de</string>
+			</dict>
+			<dict>
+				<key>icon</key>
+				<string>link_grundstudium.png</string>
+				<key>subtitle_de</key>
+				<string>Haus-/Tutoraufgabenblätter</string>
+				<key>subtitle_en</key>
+				<string>Manage class assignments</string>
+				<key>title_de</key>
+				<string>Grundstudiumstool</string>
+				<key>title_en</key>
+				<string>Assignments tool</string>
+				<key>url_de</key>
+				<string>https://grundstudium.in.tum.de/</string>
+				<key>url_en</key>
+				<string>https://grundstudium.in.tum.de/</string>
+			</dict>
+			<dict>
+				<key>icon</key>
+				<string>link_biblio.png</string>
+				<key>subtitle_de</key>
+				<string>Katalog und Ausleihe</string>
+				<key>subtitle_en</key>
+				<string>Catalogue and account</string>
+				<key>title_de</key>
+				<string>Bibliothek</string>
+				<key>title_en</key>
+				<string>Library</string>
+				<key>url_de</key>
+				<string>https://grundstudium.in.tum.de/</string>
+				<key>url_en</key>
+				<string>https://grundstudium.in.tum.de/</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>category_de</key>
+		<string>Studienpläne</string>
+		<key>category_en</key>
+		<string>Study plans</string>
+		<key>links</key>
+		<array>
+			<dict>
+				<key>icon</key>
+				<string>link_intum.png</string>
+				<key>subtitle_de</key>
+				<string>Pflichveranstaltungen und Klausuren</string>
+				<key>subtitle_en</key>
+				<string>Mandatory classes and exams</string>
+				<key>title_de</key>
+				<string>Informatik B.Sc.</string>
+				<key>title_en</key>
+				<string>Informatics B.Sc.</string>
+				<key>url_de</key>
+				<string>http://www.in.tum.de/fuer-studierende-der-tum/bachelor-studiengaenge/informatik/studienplan/studienbeginn-ab-ws-20072008.html</string>
+				<key>url_en</key>
+				<string>http://www.in.tum.de/en/for-students-of-the-tum/bachelor-studiengaenge/informatik/studienplan/start-of-study-as-from-winter-semester-20072008.html</string>
+			</dict>
+			<dict>
+				<key>icon</key>
+				<string>link_matum.png</string>
+				<key>subtitle_de</key>
+				<string>Pflichveranstaltungen und Klausuren</string>
+				<key>subtitle_en</key>
+				<string>Mandatory classes and exams</string>
+				<key>title_de</key>
+				<string>Mathematik B.Sc.</string>
+				<key>title_en</key>
+				<string>Mathematics B.Sc.</string>
+				<key>url_de</key>
+				<string>http://www.ma.tum.de/Studium/BScMathe</string>
+				<key>url_en</key>
+				<string>http://www.ma.tum.de/Studium/BScMathe</string>
+			</dict>
+			<dict>
+				<key>icon</key>
+				<string>link_phtum.png</string>
+				<key>subtitle_de</key>
+				<string>Pflichveranstaltungen und Klausuren</string>
+				<key>subtitle_en</key>
+				<string>Mandatory classes and exams</string>
+				<key>title_de</key>
+				<string>Physik B.Sc.</string>
+				<key>title_en</key>
+				<string>Physics B.Sc.</string>
+				<key>url_de</key>
+				<string>http://www.ph.tum.de/angebot/bachelor/Studienplan_Uebersicht.png</string>
+				<key>url_en</key>
+				<string>http://www.ph.tum.de/angebot/bachelor/Studienplan_Uebersicht.png</string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>

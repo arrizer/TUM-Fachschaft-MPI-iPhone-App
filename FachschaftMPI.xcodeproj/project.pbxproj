@@ -1,0 +1,655 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* FSMPIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* FSMPIAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		28216C970DB411BC00E5133A /* FSMPIClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28216C960DB411BC00E5133A /* FSMPIClockViewController.m */; };
+		282CCBFE0DB6C98000C4EA27 /* FSMPINewsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 282CCBFD0DB6C98000C4EA27 /* FSMPINewsView.xib */; };
+		2840D7CE1179279E00D7F93C /* FSMPIClockView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2840D7CD1179279E00D7F93C /* FSMPIClockView.xib */; };
+		288765080DF74369002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765070DF74369002DB57D /* CoreGraphics.framework */; };
+		390463FD121F266700D62C52 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = 390463F8121F266700D62C52 /* TFHpple.m */; };
+		390463FE121F266700D62C52 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 390463FA121F266700D62C52 /* TFHppleElement.m */; };
+		390463FF121F266700D62C52 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 390463FC121F266700D62C52 /* XPathQuery.m */; };
+		390464C5121F33D700D62C52 /* U1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 390464BF121F33D700D62C52 /* U1.gif */; };
+		390464C6121F33D700D62C52 /* U2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 390464C0121F33D700D62C52 /* U2.gif */; };
+		390464C7121F33D700D62C52 /* U3.gif in Resources */ = {isa = PBXBuildFile; fileRef = 390464C1121F33D700D62C52 /* U3.gif */; };
+		390464C8121F33D700D62C52 /* U4.gif in Resources */ = {isa = PBXBuildFile; fileRef = 390464C2121F33D700D62C52 /* U4.gif */; };
+		390464C9121F33D700D62C52 /* U5.gif in Resources */ = {isa = PBXBuildFile; fileRef = 390464C3121F33D700D62C52 /* U5.gif */; };
+		390464CA121F33D700D62C52 /* U6.gif in Resources */ = {isa = PBXBuildFile; fileRef = 390464C4121F33D700D62C52 /* U6.gif */; };
+		3904659C121F450F00D62C52 /* 12.gif in Resources */ = {isa = PBXBuildFile; fileRef = 39046599121F450F00D62C52 /* 12.gif */; };
+		3904659D121F451000D62C52 /* 100.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3904659A121F450F00D62C52 /* 100.gif */; };
+		3904659E121F451000D62C52 /* N27.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3904659B121F450F00D62C52 /* N27.gif */; };
+		390465A5121F454B00D62C52 /* 23.gif in Resources */ = {isa = PBXBuildFile; fileRef = 390465A4121F454B00D62C52 /* 23.gif */; };
+		390465D2121F4FB200D62C52 /* FSMPIMensaParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 390465D1121F4FB200D62C52 /* FSMPIMensaParser.m */; };
+		3907E108136991C0000E9247 /* FSMPIPubTransportCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3907E107136991C0000E9247 /* FSMPIPubTransportCell.xib */; };
+		3907E10C13699664000E9247 /* link_intum.png in Resources */ = {isa = PBXBuildFile; fileRef = 3907E10913699664000E9247 /* link_intum.png */; };
+		3907E10D13699664000E9247 /* link_matum.png in Resources */ = {isa = PBXBuildFile; fileRef = 3907E10A13699664000E9247 /* link_matum.png */; };
+		3907E10E13699664000E9247 /* link_phtum.png in Resources */ = {isa = PBXBuildFile; fileRef = 3907E10B13699664000E9247 /* link_phtum.png */; };
+		3907E1101369966C000E9247 /* link_grundstudium.png in Resources */ = {isa = PBXBuildFile; fileRef = 3907E10F1369966C000E9247 /* link_grundstudium.png */; };
+		3907E1121369971D000E9247 /* link_studentenwerk.png in Resources */ = {isa = PBXBuildFile; fileRef = 3907E1111369971D000E9247 /* link_studentenwerk.png */; };
+		390DB290137D3A0300E2B805 /* FSMPICanteenListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 390DB28F137D3A0300E2B805 /* FSMPICanteenListViewController.m */; };
+		390DB292137D3BD600E2B805 /* canteens.plist in Resources */ = {isa = PBXBuildFile; fileRef = 390DB291137D3BD600E2B805 /* canteens.plist */; };
+		390DB295137D503600E2B805 /* canteen_loske.png in Resources */ = {isa = PBXBuildFile; fileRef = 390DB293137D503600E2B805 /* canteen_loske.png */; };
+		390DB296137D503600E2B805 /* canteen_mensa.png in Resources */ = {isa = PBXBuildFile; fileRef = 390DB294137D503600E2B805 /* canteen_mensa.png */; };
+		390DB29B137D767D00E2B805 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 390DB29A137D767D00E2B805 /* MainWindow.xib */; };
+		3918774A125FF610005F24ED /* FSMPIMensaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39187749125FF610005F24ED /* FSMPIMensaCell.xib */; };
+		39369B44121EAF9200AD9866 /* FSMPIMVGParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 39369B43121EAF9200AD9866 /* FSMPIMVGParser.m */; };
+		393915D41222E16200411491 /* FSMPINewsParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 393915D31222E16200411491 /* FSMPINewsParser.m */; };
+		3981935C136988D900205ACC /* tutorial.html in Resources */ = {isa = PBXBuildFile; fileRef = 3981935E136988D900205ACC /* tutorial.html */; };
+		3981936213698C2800205ACC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3981936413698C2800205ACC /* Localizable.strings */; };
+		399F31B113670D5200CE456A /* news_template.html in Resources */ = {isa = PBXBuildFile; fileRef = 399F31B013670D5200CE456A /* news_template.html */; };
+		39BFD2A812201C3300155D97 /* 27.gif in Resources */ = {isa = PBXBuildFile; fileRef = 39BFD2A712201C3300155D97 /* 27.gif */; };
+		39C0785313B2445200D8BA85 /* FSMPIFMICanteenParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 39C0785213B2445200D8BA85 /* FSMPIFMICanteenParser.m */; };
+		39C0785513B24D3D00D8BA85 /* FSMPIFMICanteenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39C0785413B24D3C00D8BA85 /* FSMPIFMICanteenView.xib */; };
+		39C0785713B24D8800D8BA85 /* FSMPIFMICanteenCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39C0785613B24D8800D8BA85 /* FSMPIFMICanteenCell.xib */; };
+		39C0785A13B2506C00D8BA85 /* FSMPIFMICanteenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39C0785913B2506B00D8BA85 /* FSMPIFMICanteenViewController.m */; };
+		39FCBC8C13194E6C00768622 /* FSMPINewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39FCBC8B13194E6C00768622 /* FSMPINewsCell.xib */; };
+		7E91A27B121C87EB00E5B8C6 /* clock_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E91A278121C87EB00E5B8C6 /* clock_background.png */; };
+		7E91A27D121C87EB00E5B8C6 /* clock_case.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E91A27A121C87EB00E5B8C6 /* clock_case.png */; };
+		7E91A27F121C884B00E5B8C6 /* clock_ball.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E91A27E121C884B00E5B8C6 /* clock_ball.png */; };
+		7E91A293121C8A8A00E5B8C6 /* FSMPILinksView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E91A292121C8A8A00E5B8C6 /* FSMPILinksView.xib */; };
+		7E91A29F121C8BAF00E5B8C6 /* FSMPIMensaView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E91A29E121C8BAF00E5B8C6 /* FSMPIMensaView.xib */; };
+		7E91A2A1121C8BCE00E5B8C6 /* FSMPIPubTransportView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E91A2A0121C8BCE00E5B8C6 /* FSMPIPubTransportView.xib */; };
+		7E91A2B3121C8CEC00E5B8C6 /* FSMPIMensaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E91A2B2121C8CEC00E5B8C6 /* FSMPIMensaViewController.m */; };
+		7E91A2B6121C8D0B00E5B8C6 /* FSMPIPubTransportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E91A2B5121C8D0B00E5B8C6 /* FSMPIPubTransportViewController.m */; };
+		7E91A2B9121C8D1800E5B8C6 /* FSMPILinksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E91A2B8121C8D1800E5B8C6 /* FSMPILinksViewController.m */; };
+		7E91A2BC121C8D2D00E5B8C6 /* FSMPINewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E91A2BB121C8D2D00E5B8C6 /* FSMPINewsViewController.m */; };
+		7ED5C1BE121C9E54006A25C7 /* tab_news.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ED5C1BC121C9E54006A25C7 /* tab_news.png */; };
+		7ED5C1C1121C9EA3006A25C7 /* tab_clock.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ED5C1C0121C9EA3006A25C7 /* tab_clock.png */; };
+		7ED5C1C7121CA4A1006A25C7 /* tab_mensa.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ED5C1C4121CA4A1006A25C7 /* tab_mensa.png */; };
+		7ED5C1C8121CA4A1006A25C7 /* tab_pubtransport.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ED5C1C5121CA4A1006A25C7 /* tab_pubtransport.png */; };
+		7ED5C1CB121CA4DD006A25C7 /* tab_links.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ED5C1CA121CA4DD006A25C7 /* tab_links.png */; };
+		7ED5C3B5121CDE0C006A25C7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ED5C3B1121CDE0C006A25C7 /* Default.png */; };
+		7ED5C3B6121CDE0C006A25C7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ED5C3B2121CDE0C006A25C7 /* Default@2x.png */; };
+		7ED5C3B7121CDE0C006A25C7 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ED5C3B3121CDE0C006A25C7 /* Icon.png */; };
+		7ED5C3B8121CDE0C006A25C7 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ED5C3B4121CDE0C006A25C7 /* Icon@2x.png */; };
+		7ED5C422121CE9DF006A25C7 /* links.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7ED5C421121CE9DF006A25C7 /* links.plist */; };
+		7ED5C425121CEC64006A25C7 /* FSMPILinkCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7ED5C424121CEC64006A25C7 /* FSMPILinkCell.xib */; };
+		7ED5C461121CF253006A25C7 /* link_fshomepage.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ED5C460121CF253006A25C7 /* link_fshomepage.png */; };
+		7ED5C474121CF765006A25C7 /* link_biblio.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ED5C471121CF765006A25C7 /* link_biblio.png */; };
+		7ED5C475121CF765006A25C7 /* link_roomfinder.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ED5C472121CF765006A25C7 /* link_roomfinder.png */; };
+		7ED5C476121CF765006A25C7 /* link_tumonline.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ED5C473121CF765006A25C7 /* link_tumonline.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* FSMPIAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMPIAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* FSMPIAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMPIAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* FachschaftMPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FachschaftMPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		28216C950DB411BC00E5133A /* FSMPIClockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMPIClockViewController.h; sourceTree = "<group>"; };
+		28216C960DB411BC00E5133A /* FSMPIClockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMPIClockViewController.m; sourceTree = "<group>"; };
+		282CCBFD0DB6C98000C4EA27 /* FSMPINewsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = FSMPINewsView.xib; path = XIB/FSMPINewsView.xib; sourceTree = "<group>"; };
+		2840D7CD1179279E00D7F93C /* FSMPIClockView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FSMPIClockView.xib; path = XIB/FSMPIClockView.xib; sourceTree = "<group>"; };
+		288765070DF74369002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28A0AB4B0D9B1048005BE974 /* FachschaftMPI_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FachschaftMPI_Prefix.pch; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		390463F7121F266700D62C52 /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHpple.h; sourceTree = "<group>"; };
+		390463F8121F266700D62C52 /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHpple.m; sourceTree = "<group>"; };
+		390463F9121F266700D62C52 /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHppleElement.h; sourceTree = "<group>"; };
+		390463FA121F266700D62C52 /* TFHppleElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHppleElement.m; sourceTree = "<group>"; };
+		390463FB121F266700D62C52 /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
+		390463FC121F266700D62C52 /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
+		390464BF121F33D700D62C52 /* U1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = U1.gif; path = Resources/Images/MVGIcons/U1.gif; sourceTree = "<group>"; };
+		390464C0121F33D700D62C52 /* U2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = U2.gif; path = Resources/Images/MVGIcons/U2.gif; sourceTree = "<group>"; };
+		390464C1121F33D700D62C52 /* U3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = U3.gif; path = Resources/Images/MVGIcons/U3.gif; sourceTree = "<group>"; };
+		390464C2121F33D700D62C52 /* U4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = U4.gif; path = Resources/Images/MVGIcons/U4.gif; sourceTree = "<group>"; };
+		390464C3121F33D700D62C52 /* U5.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = U5.gif; path = Resources/Images/MVGIcons/U5.gif; sourceTree = "<group>"; };
+		390464C4121F33D700D62C52 /* U6.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = U6.gif; path = Resources/Images/MVGIcons/U6.gif; sourceTree = "<group>"; };
+		39046599121F450F00D62C52 /* 12.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = 12.gif; path = Resources/Images/MVGIcons/12.gif; sourceTree = "<group>"; };
+		3904659A121F450F00D62C52 /* 100.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = 100.gif; path = Resources/Images/MVGIcons/100.gif; sourceTree = "<group>"; };
+		3904659B121F450F00D62C52 /* N27.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = N27.gif; path = Resources/Images/MVGIcons/N27.gif; sourceTree = "<group>"; };
+		390465A4121F454B00D62C52 /* 23.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = 23.gif; path = Resources/Images/MVGIcons/23.gif; sourceTree = "<group>"; };
+		390465D0121F4FB200D62C52 /* FSMPIMensaParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMPIMensaParser.h; sourceTree = "<group>"; };
+		390465D1121F4FB200D62C52 /* FSMPIMensaParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMPIMensaParser.m; sourceTree = "<group>"; };
+		3907E107136991C0000E9247 /* FSMPIPubTransportCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FSMPIPubTransportCell.xib; path = XIB/FSMPIPubTransportCell.xib; sourceTree = "<group>"; };
+		3907E10913699664000E9247 /* link_intum.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = link_intum.png; path = Resources/Images/link_intum.png; sourceTree = "<group>"; };
+		3907E10A13699664000E9247 /* link_matum.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = link_matum.png; path = Resources/Images/link_matum.png; sourceTree = "<group>"; };
+		3907E10B13699664000E9247 /* link_phtum.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = link_phtum.png; path = Resources/Images/link_phtum.png; sourceTree = "<group>"; };
+		3907E10F1369966C000E9247 /* link_grundstudium.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = link_grundstudium.png; path = Resources/Images/link_grundstudium.png; sourceTree = "<group>"; };
+		3907E1111369971D000E9247 /* link_studentenwerk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = link_studentenwerk.png; path = Resources/Images/link_studentenwerk.png; sourceTree = "<group>"; };
+		390DB28E137D3A0300E2B805 /* FSMPICanteenListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMPICanteenListViewController.h; sourceTree = "<group>"; };
+		390DB28F137D3A0300E2B805 /* FSMPICanteenListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMPICanteenListViewController.m; sourceTree = "<group>"; };
+		390DB291137D3BD600E2B805 /* canteens.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = canteens.plist; path = Resources/Other/canteens.plist; sourceTree = "<group>"; };
+		390DB293137D503600E2B805 /* canteen_loske.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = canteen_loske.png; path = Resources/Images/canteen_loske.png; sourceTree = "<group>"; };
+		390DB294137D503600E2B805 /* canteen_mensa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = canteen_mensa.png; path = Resources/Images/canteen_mensa.png; sourceTree = "<group>"; };
+		390DB29A137D767D00E2B805 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainWindow.xib; path = XIB/MainWindow.xib; sourceTree = "<group>"; };
+		39187749125FF610005F24ED /* FSMPIMensaCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = FSMPIMensaCell.xib; path = XIB/FSMPIMensaCell.xib; sourceTree = "<group>"; };
+		39369B42121EAF9200AD9866 /* FSMPIMVGParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMPIMVGParser.h; sourceTree = "<group>"; };
+		39369B43121EAF9200AD9866 /* FSMPIMVGParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMPIMVGParser.m; sourceTree = "<group>"; };
+		393915D21222E16200411491 /* FSMPINewsParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMPINewsParser.h; sourceTree = "<group>"; };
+		393915D31222E16200411491 /* FSMPINewsParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMPINewsParser.m; sourceTree = "<group>"; };
+		3981935D136988D900205ACC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = en; path = en.lproj/tutorial.html; sourceTree = "<group>"; };
+		3981935F1369890D00205ACC /* de */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = de; path = de.lproj/tutorial.html; sourceTree = "<group>"; };
+		3981936313698C2800205ACC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3981936513698C3A00205ACC /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		399F31B013670D5200CE456A /* news_template.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = news_template.html; path = Resources/Other/news_template.html; sourceTree = "<group>"; };
+		39BFD2A712201C3300155D97 /* 27.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = 27.gif; path = Resources/Images/MVGIcons/27.gif; sourceTree = "<group>"; };
+		39C0785113B2445200D8BA85 /* FSMPIFMICanteenParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMPIFMICanteenParser.h; sourceTree = "<group>"; };
+		39C0785213B2445200D8BA85 /* FSMPIFMICanteenParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMPIFMICanteenParser.m; sourceTree = "<group>"; };
+		39C0785413B24D3C00D8BA85 /* FSMPIFMICanteenView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FSMPIFMICanteenView.xib; path = XIB/FSMPIFMICanteenView.xib; sourceTree = "<group>"; };
+		39C0785613B24D8800D8BA85 /* FSMPIFMICanteenCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FSMPIFMICanteenCell.xib; path = XIB/FSMPIFMICanteenCell.xib; sourceTree = "<group>"; };
+		39C0785813B2506B00D8BA85 /* FSMPIFMICanteenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMPIFMICanteenViewController.h; sourceTree = "<group>"; };
+		39C0785913B2506B00D8BA85 /* FSMPIFMICanteenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMPIFMICanteenViewController.m; sourceTree = "<group>"; };
+		39FCBC8B13194E6C00768622 /* FSMPINewsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = FSMPINewsCell.xib; path = XIB/FSMPINewsCell.xib; sourceTree = "<group>"; };
+		7E91A278121C87EB00E5B8C6 /* clock_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = clock_background.png; path = Resources/Images/clock_background.png; sourceTree = "<group>"; };
+		7E91A27A121C87EB00E5B8C6 /* clock_case.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = clock_case.png; path = Resources/Images/clock_case.png; sourceTree = "<group>"; };
+		7E91A27E121C884B00E5B8C6 /* clock_ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = clock_ball.png; path = Resources/Images/clock_ball.png; sourceTree = "<group>"; };
+		7E91A292121C8A8A00E5B8C6 /* FSMPILinksView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FSMPILinksView.xib; path = XIB/FSMPILinksView.xib; sourceTree = "<group>"; };
+		7E91A29E121C8BAF00E5B8C6 /* FSMPIMensaView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = FSMPIMensaView.xib; path = XIB/FSMPIMensaView.xib; sourceTree = "<group>"; };
+		7E91A2A0121C8BCE00E5B8C6 /* FSMPIPubTransportView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = FSMPIPubTransportView.xib; path = XIB/FSMPIPubTransportView.xib; sourceTree = "<group>"; };
+		7E91A2B1121C8CEC00E5B8C6 /* FSMPIMensaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMPIMensaViewController.h; sourceTree = "<group>"; };
+		7E91A2B2121C8CEC00E5B8C6 /* FSMPIMensaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMPIMensaViewController.m; sourceTree = "<group>"; };
+		7E91A2B4121C8D0B00E5B8C6 /* FSMPIPubTransportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMPIPubTransportViewController.h; sourceTree = "<group>"; };
+		7E91A2B5121C8D0B00E5B8C6 /* FSMPIPubTransportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMPIPubTransportViewController.m; sourceTree = "<group>"; };
+		7E91A2B7121C8D1800E5B8C6 /* FSMPILinksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMPILinksViewController.h; sourceTree = "<group>"; };
+		7E91A2B8121C8D1800E5B8C6 /* FSMPILinksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMPILinksViewController.m; sourceTree = "<group>"; };
+		7E91A2BA121C8D2D00E5B8C6 /* FSMPINewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMPINewsViewController.h; sourceTree = "<group>"; };
+		7E91A2BB121C8D2D00E5B8C6 /* FSMPINewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMPINewsViewController.m; sourceTree = "<group>"; };
+		7ED5C1BC121C9E54006A25C7 /* tab_news.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tab_news.png; path = Resources/Images/tab_news.png; sourceTree = "<group>"; };
+		7ED5C1C0121C9EA3006A25C7 /* tab_clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tab_clock.png; path = Resources/Images/tab_clock.png; sourceTree = "<group>"; };
+		7ED5C1C4121CA4A1006A25C7 /* tab_mensa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tab_mensa.png; path = Resources/Images/tab_mensa.png; sourceTree = "<group>"; };
+		7ED5C1C5121CA4A1006A25C7 /* tab_pubtransport.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tab_pubtransport.png; path = Resources/Images/tab_pubtransport.png; sourceTree = "<group>"; };
+		7ED5C1CA121CA4DD006A25C7 /* tab_links.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tab_links.png; path = Resources/Images/tab_links.png; sourceTree = "<group>"; };
+		7ED5C3B1121CDE0C006A25C7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		7ED5C3B2121CDE0C006A25C7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		7ED5C3B3121CDE0C006A25C7 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		7ED5C3B4121CDE0C006A25C7 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		7ED5C421121CE9DF006A25C7 /* links.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; name = links.plist; path = Resources/Other/links.plist; sourceTree = "<group>"; };
+		7ED5C424121CEC64006A25C7 /* FSMPILinkCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = FSMPILinkCell.xib; path = XIB/FSMPILinkCell.xib; sourceTree = "<group>"; };
+		7ED5C460121CF253006A25C7 /* link_fshomepage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = link_fshomepage.png; path = Resources/Images/link_fshomepage.png; sourceTree = "<group>"; };
+		7ED5C471121CF765006A25C7 /* link_biblio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = link_biblio.png; path = Resources/Images/link_biblio.png; sourceTree = "<group>"; };
+		7ED5C472121CF765006A25C7 /* link_roomfinder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = link_roomfinder.png; path = Resources/Images/link_roomfinder.png; sourceTree = "<group>"; };
+		7ED5C473121CF765006A25C7 /* link_tumonline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = link_tumonline.png; path = Resources/Images/link_tumonline.png; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* FachschaftMPI-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "FachschaftMPI-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765080DF74369002DB57D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1D3623240D0F684500981E51 /* FSMPIAppDelegate.h */,
+				1D3623250D0F684500981E51 /* FSMPIAppDelegate.m */,
+				39369B41121EAF6900AD9866 /* Utilities */,
+				39369B40121EAF5B00AD9866 /* Controllers */,
+				390463F6121F266700D62C52 /* External */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* FachschaftMPI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* FachschaftMPI */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = FachschaftMPI;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				28A0AB4B0D9B1048005BE974 /* FachschaftMPI_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3981936413698C2800205ACC /* Localizable.strings */,
+				8D1107310486CEB800E47090 /* FachschaftMPI-Info.plist */,
+				7E91A277121C87DB00E5B8C6 /* Images */,
+				7E91A2A2121C8BE000E5B8C6 /* XIB */,
+				7ED5C3D1121CE254006A25C7 /* Other */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765070DF74369002DB57D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		390463F6121F266700D62C52 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				390463F7121F266700D62C52 /* TFHpple.h */,
+				390463F8121F266700D62C52 /* TFHpple.m */,
+				390463F9121F266700D62C52 /* TFHppleElement.h */,
+				390463FA121F266700D62C52 /* TFHppleElement.m */,
+				390463FB121F266700D62C52 /* XPathQuery.h */,
+				390463FC121F266700D62C52 /* XPathQuery.m */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		390464BE121F33C700D62C52 /* MVGIcons */ = {
+			isa = PBXGroup;
+			children = (
+				39046599121F450F00D62C52 /* 12.gif */,
+				39BFD2A712201C3300155D97 /* 27.gif */,
+				3904659A121F450F00D62C52 /* 100.gif */,
+				3904659B121F450F00D62C52 /* N27.gif */,
+				390465A4121F454B00D62C52 /* 23.gif */,
+				390464BF121F33D700D62C52 /* U1.gif */,
+				390464C0121F33D700D62C52 /* U2.gif */,
+				390464C1121F33D700D62C52 /* U3.gif */,
+				390464C2121F33D700D62C52 /* U4.gif */,
+				390464C3121F33D700D62C52 /* U5.gif */,
+				390464C4121F33D700D62C52 /* U6.gif */,
+			);
+			name = MVGIcons;
+			sourceTree = "<group>";
+		};
+		39369B40121EAF5B00AD9866 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				28216C950DB411BC00E5133A /* FSMPIClockViewController.h */,
+				28216C960DB411BC00E5133A /* FSMPIClockViewController.m */,
+				7E91A2BA121C8D2D00E5B8C6 /* FSMPINewsViewController.h */,
+				7E91A2BB121C8D2D00E5B8C6 /* FSMPINewsViewController.m */,
+				390DB28E137D3A0300E2B805 /* FSMPICanteenListViewController.h */,
+				390DB28F137D3A0300E2B805 /* FSMPICanteenListViewController.m */,
+				7E91A2B1121C8CEC00E5B8C6 /* FSMPIMensaViewController.h */,
+				7E91A2B2121C8CEC00E5B8C6 /* FSMPIMensaViewController.m */,
+				39C0785813B2506B00D8BA85 /* FSMPIFMICanteenViewController.h */,
+				39C0785913B2506B00D8BA85 /* FSMPIFMICanteenViewController.m */,
+				7E91A2B4121C8D0B00E5B8C6 /* FSMPIPubTransportViewController.h */,
+				7E91A2B5121C8D0B00E5B8C6 /* FSMPIPubTransportViewController.m */,
+				7E91A2B7121C8D1800E5B8C6 /* FSMPILinksViewController.h */,
+				7E91A2B8121C8D1800E5B8C6 /* FSMPILinksViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		39369B41121EAF6900AD9866 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				39369B42121EAF9200AD9866 /* FSMPIMVGParser.h */,
+				39369B43121EAF9200AD9866 /* FSMPIMVGParser.m */,
+				390465D0121F4FB200D62C52 /* FSMPIMensaParser.h */,
+				390465D1121F4FB200D62C52 /* FSMPIMensaParser.m */,
+				393915D21222E16200411491 /* FSMPINewsParser.h */,
+				393915D31222E16200411491 /* FSMPINewsParser.m */,
+				39C0785113B2445200D8BA85 /* FSMPIFMICanteenParser.h */,
+				39C0785213B2445200D8BA85 /* FSMPIFMICanteenParser.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		7E91A277121C87DB00E5B8C6 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				390DB293137D503600E2B805 /* canteen_loske.png */,
+				390DB294137D503600E2B805 /* canteen_mensa.png */,
+				390464BE121F33C700D62C52 /* MVGIcons */,
+				7ED5C471121CF765006A25C7 /* link_biblio.png */,
+				7ED5C472121CF765006A25C7 /* link_roomfinder.png */,
+				7ED5C473121CF765006A25C7 /* link_tumonline.png */,
+				7ED5C460121CF253006A25C7 /* link_fshomepage.png */,
+				3907E10913699664000E9247 /* link_intum.png */,
+				3907E10A13699664000E9247 /* link_matum.png */,
+				3907E10B13699664000E9247 /* link_phtum.png */,
+				3907E10F1369966C000E9247 /* link_grundstudium.png */,
+				3907E1111369971D000E9247 /* link_studentenwerk.png */,
+				7ED5C1BC121C9E54006A25C7 /* tab_news.png */,
+				7ED5C1C0121C9EA3006A25C7 /* tab_clock.png */,
+				7ED5C1C4121CA4A1006A25C7 /* tab_mensa.png */,
+				7ED5C1C5121CA4A1006A25C7 /* tab_pubtransport.png */,
+				7ED5C1CA121CA4DD006A25C7 /* tab_links.png */,
+				7E91A278121C87EB00E5B8C6 /* clock_background.png */,
+				7E91A27A121C87EB00E5B8C6 /* clock_case.png */,
+				7E91A27E121C884B00E5B8C6 /* clock_ball.png */,
+				7ED5C3B1121CDE0C006A25C7 /* Default.png */,
+				7ED5C3B2121CDE0C006A25C7 /* Default@2x.png */,
+				7ED5C3B3121CDE0C006A25C7 /* Icon.png */,
+				7ED5C3B4121CDE0C006A25C7 /* Icon@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		7E91A2A2121C8BE000E5B8C6 /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				390DB29A137D767D00E2B805 /* MainWindow.xib */,
+				2840D7CD1179279E00D7F93C /* FSMPIClockView.xib */,
+				282CCBFD0DB6C98000C4EA27 /* FSMPINewsView.xib */,
+				7E91A29E121C8BAF00E5B8C6 /* FSMPIMensaView.xib */,
+				39187749125FF610005F24ED /* FSMPIMensaCell.xib */,
+				7E91A2A0121C8BCE00E5B8C6 /* FSMPIPubTransportView.xib */,
+				3907E107136991C0000E9247 /* FSMPIPubTransportCell.xib */,
+				7E91A292121C8A8A00E5B8C6 /* FSMPILinksView.xib */,
+				7ED5C424121CEC64006A25C7 /* FSMPILinkCell.xib */,
+				39FCBC8B13194E6C00768622 /* FSMPINewsCell.xib */,
+				39C0785413B24D3C00D8BA85 /* FSMPIFMICanteenView.xib */,
+				39C0785613B24D8800D8BA85 /* FSMPIFMICanteenCell.xib */,
+			);
+			name = XIB;
+			sourceTree = "<group>";
+		};
+		7ED5C3D1121CE254006A25C7 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				399F31B013670D5200CE456A /* news_template.html */,
+				3981935E136988D900205ACC /* tutorial.html */,
+				7ED5C421121CE9DF006A25C7 /* links.plist */,
+				390DB291137D3BD600E2B805 /* canteens.plist */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* FachschaftMPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "FachschaftMPI" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FachschaftMPI;
+			productName = FachschaftMPI;
+			productReference = 1D6058910D05DD3D006BFB54 /* FachschaftMPI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "FachschaftMPI" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				de,
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* FachschaftMPI */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* FachschaftMPI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				282CCBFE0DB6C98000C4EA27 /* FSMPINewsView.xib in Resources */,
+				2840D7CE1179279E00D7F93C /* FSMPIClockView.xib in Resources */,
+				7E91A27B121C87EB00E5B8C6 /* clock_background.png in Resources */,
+				7E91A27D121C87EB00E5B8C6 /* clock_case.png in Resources */,
+				7E91A27F121C884B00E5B8C6 /* clock_ball.png in Resources */,
+				7E91A293121C8A8A00E5B8C6 /* FSMPILinksView.xib in Resources */,
+				7E91A29F121C8BAF00E5B8C6 /* FSMPIMensaView.xib in Resources */,
+				7E91A2A1121C8BCE00E5B8C6 /* FSMPIPubTransportView.xib in Resources */,
+				7ED5C1BE121C9E54006A25C7 /* tab_news.png in Resources */,
+				7ED5C1C1121C9EA3006A25C7 /* tab_clock.png in Resources */,
+				7ED5C1C7121CA4A1006A25C7 /* tab_mensa.png in Resources */,
+				7ED5C1C8121CA4A1006A25C7 /* tab_pubtransport.png in Resources */,
+				7ED5C1CB121CA4DD006A25C7 /* tab_links.png in Resources */,
+				7ED5C3B5121CDE0C006A25C7 /* Default.png in Resources */,
+				7ED5C3B6121CDE0C006A25C7 /* Default@2x.png in Resources */,
+				7ED5C3B7121CDE0C006A25C7 /* Icon.png in Resources */,
+				7ED5C3B8121CDE0C006A25C7 /* Icon@2x.png in Resources */,
+				3981935C136988D900205ACC /* tutorial.html in Resources */,
+				7ED5C422121CE9DF006A25C7 /* links.plist in Resources */,
+				7ED5C425121CEC64006A25C7 /* FSMPILinkCell.xib in Resources */,
+				7ED5C461121CF253006A25C7 /* link_fshomepage.png in Resources */,
+				7ED5C474121CF765006A25C7 /* link_biblio.png in Resources */,
+				7ED5C475121CF765006A25C7 /* link_roomfinder.png in Resources */,
+				7ED5C476121CF765006A25C7 /* link_tumonline.png in Resources */,
+				390464C5121F33D700D62C52 /* U1.gif in Resources */,
+				390464C6121F33D700D62C52 /* U2.gif in Resources */,
+				390464C7121F33D700D62C52 /* U3.gif in Resources */,
+				390464C8121F33D700D62C52 /* U4.gif in Resources */,
+				390464C9121F33D700D62C52 /* U5.gif in Resources */,
+				390464CA121F33D700D62C52 /* U6.gif in Resources */,
+				3904659C121F450F00D62C52 /* 12.gif in Resources */,
+				3904659D121F451000D62C52 /* 100.gif in Resources */,
+				3904659E121F451000D62C52 /* N27.gif in Resources */,
+				390465A5121F454B00D62C52 /* 23.gif in Resources */,
+				39BFD2A812201C3300155D97 /* 27.gif in Resources */,
+				3918774A125FF610005F24ED /* FSMPIMensaCell.xib in Resources */,
+				39FCBC8C13194E6C00768622 /* FSMPINewsCell.xib in Resources */,
+				399F31B113670D5200CE456A /* news_template.html in Resources */,
+				3981936213698C2800205ACC /* Localizable.strings in Resources */,
+				3907E108136991C0000E9247 /* FSMPIPubTransportCell.xib in Resources */,
+				3907E10C13699664000E9247 /* link_intum.png in Resources */,
+				3907E10D13699664000E9247 /* link_matum.png in Resources */,
+				3907E10E13699664000E9247 /* link_phtum.png in Resources */,
+				3907E1101369966C000E9247 /* link_grundstudium.png in Resources */,
+				3907E1121369971D000E9247 /* link_studentenwerk.png in Resources */,
+				390DB292137D3BD600E2B805 /* canteens.plist in Resources */,
+				390DB295137D503600E2B805 /* canteen_loske.png in Resources */,
+				390DB296137D503600E2B805 /* canteen_mensa.png in Resources */,
+				390DB29B137D767D00E2B805 /* MainWindow.xib in Resources */,
+				39C0785513B24D3D00D8BA85 /* FSMPIFMICanteenView.xib in Resources */,
+				39C0785713B24D8800D8BA85 /* FSMPIFMICanteenCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* FSMPIAppDelegate.m in Sources */,
+				28216C970DB411BC00E5133A /* FSMPIClockViewController.m in Sources */,
+				7E91A2B3121C8CEC00E5B8C6 /* FSMPIMensaViewController.m in Sources */,
+				7E91A2B6121C8D0B00E5B8C6 /* FSMPIPubTransportViewController.m in Sources */,
+				7E91A2B9121C8D1800E5B8C6 /* FSMPILinksViewController.m in Sources */,
+				7E91A2BC121C8D2D00E5B8C6 /* FSMPINewsViewController.m in Sources */,
+				39369B44121EAF9200AD9866 /* FSMPIMVGParser.m in Sources */,
+				390463FD121F266700D62C52 /* TFHpple.m in Sources */,
+				390463FE121F266700D62C52 /* TFHppleElement.m in Sources */,
+				390463FF121F266700D62C52 /* XPathQuery.m in Sources */,
+				390465D2121F4FB200D62C52 /* FSMPIMensaParser.m in Sources */,
+				393915D41222E16200411491 /* FSMPINewsParser.m in Sources */,
+				390DB290137D3A0300E2B805 /* FSMPICanteenListViewController.m in Sources */,
+				39C0785313B2445200D8BA85 /* FSMPIFMICanteenParser.m in Sources */,
+				39C0785A13B2506C00D8BA85 /* FSMPIFMICanteenViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3981935E136988D900205ACC /* tutorial.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3981935D136988D900205ACC /* en */,
+				3981935F1369890D00205ACC /* de */,
+			);
+			name = tutorial.html;
+			path = Resources/Other;
+			sourceTree = "<group>";
+		};
+		3981936413698C2800205ACC /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3981936313698C2800205ACC /* en */,
+				3981936513698C3A00205ACC /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Matthias Schwab (D4MRE2G7QY)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Matthias Schwab (D4MRE2G7QY)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FachschaftMPI_Prefix.pch;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "FachschaftMPI-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				PRODUCT_NAME = FachschaftMPI;
+				PROVISIONING_PROFILE = "F0B5BCA8-0EA8-4D18-ACF5-BC90125D2B8D";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F0B5BCA8-0EA8-4D18-ACF5-BC90125D2B8D";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Matthias Schwab (D4MRE2G7QY)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Matthias Schwab (D4MRE2G7QY)";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FachschaftMPI_Prefix.pch;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "FachschaftMPI-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				PRODUCT_NAME = FachschaftMPI;
+				PROVISIONING_PROFILE = "F0B5BCA8-0EA8-4D18-ACF5-BC90125D2B8D";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F0B5BCA8-0EA8-4D18-ACF5-BC90125D2B8D";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD_32_BIT)",
+					armv6,
+				);
+				CODE_SIGN_IDENTITY = "iPhone Developer: Matthias Schwab (D4MRE2G7QY)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "${SDKROOT}/usr/include/libxml2";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = "-lxml2";
+				PROVISIONING_PROFILE = "F0B5BCA8-0EA8-4D18-ACF5-BC90125D2B8D";
+				SDKROOT = iphoneos3.2;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD_32_BIT)",
+					armv6,
+				);
+				CODE_SIGN_IDENTITY = "iPhone Developer: Matthias Schwab (D4MRE2G7QY)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "${SDKROOT}/usr/include/libxml2";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = "-lxml2";
+				PROVISIONING_PROFILE = "F0B5BCA8-0EA8-4D18-ACF5-BC90125D2B8D";
+				SDKROOT = iphoneos3.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "FachschaftMPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "FachschaftMPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
