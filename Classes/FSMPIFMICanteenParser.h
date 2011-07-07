@@ -44,4 +44,6 @@
 - (void)parseMenuForCanteen:(NSString*)canteenID;
 // Parse the received HTML data;
 - (void)parseReceivedData:(NSData*)data;
+// Guesses if the current meal contains pork, beef is vegetarian etc.
+- (void)guessMealPropertiesForCurrentMeal;
 @end

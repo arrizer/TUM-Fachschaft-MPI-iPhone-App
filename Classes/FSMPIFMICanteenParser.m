@@ -98,15 +98,31 @@ foundCharacters:(NSString *)string
         [dishes addObject:self.currentMeal];
         self.currentMealTag = nil;
     }
-    else if([elementName isEqualToString:@"description"] || [elementName isEqualToString:@"price"]){
-        if([elementName isEqualToString:@"price"]) [buffer appendString:@" €"];
-        [self.currentMeal setValue:buffer forKey:elementName];
+    else if([elementName isEqualToString:@"price"]){
+        [buffer appendString:@" €"];
+        [self.currentMeal setValue:buffer forKey:@"price"];
+    }
+    else if([elementName isEqualToString:@"description"]){
+        
+        [self.currentMeal setValue:buffer forKey:@"description"];
     }
 }
 
 - (void)parserDidEndDocument:(NSXMLParser *)parser
 {
     [self.delegate canteenParser:self didFinishParsingMenu:self.menu forCanteenID:self.requestedCanteenID];
+}
+
+#pragma mark -
+
+- (void)guessMealPropertiesForCurrentMeal
+{
+    NSArray *porkKeywords = [NSArray arrayWithObjects:@"S ", @" S ", @"S+R ", @"Schweine", nil];
+    for(NSString *keyword in porkKeywords){
+        if([[currentMeal objectForKey:@"description"] rangeOfString:keyword].length > 0){
+            [currentMeal setValue:[NSNumber numberWithBool:YES] forKey:@"info"];
+        }
+    }
 }
 
 #pragma mark -
