@@ -104,10 +104,23 @@ didFinishParsingMenu:(NSArray*)parsedMenu
 	// Configure cells
     UILabel *mealLabel = (UILabel*)[cell viewWithTag:1];		// Label with the meal name
     UILabel *descriptionLabel = (UILabel*)[cell viewWithTag:2];	// Label with meal description		
+    UIImageView *vegetarianIcon = (UIImageView*)[cell viewWithTag:3];   // Vegetarian meal icon
+    UIImageView *porkIcon = (UIImageView*)[cell viewWithTag:4];         // Pork meal icon
+    UIImageView *beefIcon = (UIImageView*)[cell viewWithTag:5];         // Beef meal icon
     NSDictionary *dateContainer = [menus objectAtIndex:indexPath.section];
     NSDictionary *dish = [(NSArray*)[dateContainer objectForKey:@"dishes"] objectAtIndex:indexPath.row];
     [mealLabel setText:[dish objectForKey:@"meal"]];
     [descriptionLabel setText:[dish objectForKey:@"description"]];
+    
+    [vegetarianIcon setHidden:![(NSNumber*)[dish objectForKey:@"isVegetarian"] boolValue]];
+    [porkIcon setHidden:![(NSNumber*)[dish objectForKey:@"containsPork"] boolValue]];
+    [beefIcon setHidden:![(NSNumber*)[dish objectForKey:@"containsBeef"] boolValue]];
+    
+    if(![beefIcon isHidden] && ![porkIcon isHidden]){
+        CGRect rect = [beefIcon frame];
+        rect.origin.x -= 27;
+        [beefIcon setFrame:rect];
+    }
 
 	return cell;
 }

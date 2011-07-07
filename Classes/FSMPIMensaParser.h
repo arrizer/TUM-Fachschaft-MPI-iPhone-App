@@ -28,4 +28,6 @@
 - (void)parseMenuForMensaID:(NSString*)mensaID;
 // Called whenever a connection finished loading HTML
 - (void)parseReceivedData:(NSData*)data;
+
+- (void)guessMealPropertiesForMenuItem:(NSDictionary**)menuItem;
 @end

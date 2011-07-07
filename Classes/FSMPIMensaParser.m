@@ -65,6 +65,7 @@ const NSUInteger kFutureDatesParsed = 3;
 			if([[element tagName] isEqualToString:@"span"] && !foundDescription && !skipDate){
 				foundDescription = YES;
 				[menuItem setObject:[element content] forKey:@"description"];
+                [self guessMealPropertiesForMenuItem:&menuItem];
                 [menus addObject:menuItem];
 			}
 		}
@@ -82,6 +83,40 @@ const NSUInteger kFutureDatesParsed = 3;
 	@finally {
 	}
 }
+
+- (void)guessMealPropertiesForMenuItem:(NSDictionary**)menuItem
+{
+    NSDictionary *regularExpressions = [NSDictionary dictionaryWithObjectsAndKeys:
+                                        @"\\(f\\)", @"isVegetarian",
+                                        @"(\\(S\\)|schwein)", @"containsPork",
+                                        @"(\\(R\\)|rind)", @"containsBeef",
+                                        nil];
+    
+    NSArray *removeStrings = [NSArray arrayWithObjects:@"(S)", @"(P)", @"(f)", nil];
+    
+    for(NSString *key in [regularExpressions allKeys]){
+        NSError *error = NULL;
+        NSString *expressionString = [regularExpressions objectForKey:key];
+        NSRegularExpression *expression = [NSRegularExpression regularExpressionWithPattern:expressionString
+                                                                                    options:NSRegularExpressionCaseInsensitive 
+                                                                                      error:&error];
+        NSString *descriptionString = [*menuItem valueForKey:@"description"];
+        NSRange range = [expression rangeOfFirstMatchInString:descriptionString 
+                                                      options:0 
+                                                        range:NSMakeRange(0, [descriptionString length])];
+        if (!NSEqualRanges(range, NSMakeRange(NSNotFound, 0))) 
+        {
+            [*menuItem setValue:[NSNumber numberWithBool:YES] forKey:key];
+        }
+    }
+    
+    for(NSString *stringToRemove in removeStrings){
+        NSString *descriptionString = [*menuItem valueForKey:@"description"];
+        descriptionString = [descriptionString stringByReplacingOccurrencesOfString:stringToRemove withString:@""];
+        [*menuItem setValue:descriptionString forKey:@"description"];
+    }
+}
+
 
 #pragma mark -
 #pragma mark NSURLConnection Delegate

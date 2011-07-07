@@ -45,6 +45,10 @@
 		393915D41222E16200411491 /* FSMPINewsParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 393915D31222E16200411491 /* FSMPINewsParser.m */; };
 		3981935C136988D900205ACC /* tutorial.html in Resources */ = {isa = PBXBuildFile; fileRef = 3981935E136988D900205ACC /* tutorial.html */; };
 		3981936213698C2800205ACC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3981936413698C2800205ACC /* Localizable.strings */; };
+		39854DD813C65CE2007C2AC4 /* MealProperties.plist in Resources */ = {isa = PBXBuildFile; fileRef = 39854DD713C65CE2007C2AC4 /* MealProperties.plist */; };
+		39854DDA13C66135007C2AC4 /* vegetarian.png in Resources */ = {isa = PBXBuildFile; fileRef = 39854DD913C66135007C2AC4 /* vegetarian.png */; };
+		39854DDD13C66886007C2AC4 /* beef.png in Resources */ = {isa = PBXBuildFile; fileRef = 39854DDB13C66886007C2AC4 /* beef.png */; };
+		39854DDE13C66886007C2AC4 /* pork.png in Resources */ = {isa = PBXBuildFile; fileRef = 39854DDC13C66886007C2AC4 /* pork.png */; };
 		399F31B113670D5200CE456A /* news_template.html in Resources */ = {isa = PBXBuildFile; fileRef = 399F31B013670D5200CE456A /* news_template.html */; };
 		39BFD2A812201C3300155D97 /* 27.gif in Resources */ = {isa = PBXBuildFile; fileRef = 39BFD2A712201C3300155D97 /* 27.gif */; };
 		39C0785313B2445200D8BA85 /* FSMPIFMICanteenParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 39C0785213B2445200D8BA85 /* FSMPIFMICanteenParser.m */; };
@@ -131,6 +135,10 @@
 		3981935F1369890D00205ACC /* de */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = de; path = de.lproj/tutorial.html; sourceTree = "<group>"; };
 		3981936313698C2800205ACC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3981936513698C3A00205ACC /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		39854DD713C65CE2007C2AC4 /* MealProperties.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = MealProperties.plist; path = Resources/Other/MealProperties.plist; sourceTree = "<group>"; };
+		39854DD913C66135007C2AC4 /* vegetarian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = vegetarian.png; path = Resources/Images/MealIcons/vegetarian.png; sourceTree = "<group>"; };
+		39854DDB13C66886007C2AC4 /* beef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = beef.png; path = Resources/Images/MealIcons/beef.png; sourceTree = "<group>"; };
+		39854DDC13C66886007C2AC4 /* pork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pork.png; path = Resources/Images/MealIcons/pork.png; sourceTree = "<group>"; };
 		399F31B013670D5200CE456A /* news_template.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = news_template.html; path = Resources/Other/news_template.html; sourceTree = "<group>"; };
 		39BFD2A712201C3300155D97 /* 27.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = 27.gif; path = Resources/Images/MVGIcons/27.gif; sourceTree = "<group>"; };
 		39C0785113B2445200D8BA85 /* FSMPIFMICanteenParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMPIFMICanteenParser.h; sourceTree = "<group>"; };
@@ -235,6 +243,7 @@
 				7E91A277121C87DB00E5B8C6 /* Images */,
 				7E91A2A2121C8BE000E5B8C6 /* XIB */,
 				7ED5C3D1121CE254006A25C7 /* Other */,
+				39854DD713C65CE2007C2AC4 /* MealProperties.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -247,6 +256,16 @@
 				288765070DF74369002DB57D /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3902282913C5F8150003A373 /* MealIcon */ = {
+			isa = PBXGroup;
+			children = (
+				39854DDB13C66886007C2AC4 /* beef.png */,
+				39854DDC13C66886007C2AC4 /* pork.png */,
+				39854DD913C66135007C2AC4 /* vegetarian.png */,
+			);
+			name = MealIcon;
 			sourceTree = "<group>";
 		};
 		390463F6121F266700D62C52 /* External */ = {
@@ -319,6 +338,7 @@
 		7E91A277121C87DB00E5B8C6 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				3902282913C5F8150003A373 /* MealIcon */,
 				390DB293137D503600E2B805 /* canteen_loske.png */,
 				390DB294137D503600E2B805 /* canteen_mensa.png */,
 				390464BE121F33C700D62C52 /* MVGIcons */,
@@ -482,6 +502,10 @@
 				390DB29B137D767D00E2B805 /* MainWindow.xib in Resources */,
 				39C0785513B24D3D00D8BA85 /* FSMPIFMICanteenView.xib in Resources */,
 				39C0785713B24D8800D8BA85 /* FSMPIFMICanteenCell.xib in Resources */,
+				39854DD813C65CE2007C2AC4 /* MealProperties.plist in Resources */,
+				39854DDA13C66135007C2AC4 /* vegetarian.png in Resources */,
+				39854DDD13C66886007C2AC4 /* beef.png in Resources */,
+				39854DDE13C66886007C2AC4 /* pork.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

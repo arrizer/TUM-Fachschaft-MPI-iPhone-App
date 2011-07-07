@@ -1,6 +1,6 @@
 #import "FSMPIFMICanteenViewController.h"
 
-const CGFloat kCanteenCellHeight = 81;
+const CGFloat kCanteenCellHeight = 91;
 
 @implementation FSMPIFMICanteenViewController
 
@@ -102,12 +102,25 @@ didFinishParsingMenu:(NSArray*)parsedMenu
     }
 	
 	// Configure cells
-    UILabel *descriptionLabel = (UILabel*)[cell viewWithTag:1];	// Label with meal description		
-    UILabel *priceLabel = (UILabel*)[cell viewWithTag:2];		// Label with the meal price
+    UILabel *descriptionLabel = (UILabel*)[cell viewWithTag:1];         // Label with meal description		
+    UILabel *priceLabel = (UILabel*)[cell viewWithTag:2];               // Label with the meal price
+    UIImageView *vegetarianIcon = (UIImageView*)[cell viewWithTag:3];   // Vegetarian meal icon
+    UIImageView *porkIcon = (UIImageView*)[cell viewWithTag:4];         // Pork meal icon
+    UIImageView *beefIcon = (UIImageView*)[cell viewWithTag:5];         // Beef meal icon
+    
     NSDictionary *dateContainer = [menus objectAtIndex:indexPath.section];
     NSDictionary *dish = [(NSArray*)[dateContainer objectForKey:@"dishes"] objectAtIndex:indexPath.row];
     [descriptionLabel setText:[dish objectForKey:@"description"]];
     [priceLabel setText:[dish objectForKey:@"price"]];
+    [vegetarianIcon setHidden:![(NSNumber*)[dish objectForKey:@"isVegetarian"] boolValue]];
+    [porkIcon setHidden:![(NSNumber*)[dish objectForKey:@"containsPork"] boolValue]];
+    [beefIcon setHidden:![(NSNumber*)[dish objectForKey:@"containsBeef"] boolValue]];
+    
+    if(![beefIcon isHidden] && ![porkIcon isHidden]){
+        CGRect rect = [beefIcon frame];
+        rect.origin.x -= 27;
+        [beefIcon setFrame:rect];
+    }
     
 	return cell;
 }

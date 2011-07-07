@@ -2,6 +2,7 @@
 
 @implementation FSMPIFMICanteenParser
 
+
 const NSUInteger kFutureCanteenDatesParsed = 5;
 
 @synthesize requestedCanteenID, delegate, menu, currentMeal, currentMealPlan, currentMealTag;
@@ -103,8 +104,8 @@ foundCharacters:(NSString *)string
         [self.currentMeal setValue:buffer forKey:@"price"];
     }
     else if([elementName isEqualToString:@"description"]){
-        
         [self.currentMeal setValue:buffer forKey:@"description"];
+        [self guessMealPropertiesForCurrentMeal];
     }
 }
 
@@ -113,15 +114,35 @@ foundCharacters:(NSString *)string
     [self.delegate canteenParser:self didFinishParsingMenu:self.menu forCanteenID:self.requestedCanteenID];
 }
 
-#pragma mark -
 
 - (void)guessMealPropertiesForCurrentMeal
 {
-    NSArray *porkKeywords = [NSArray arrayWithObjects:@"S ", @" S ", @"S+R ", @"Schweine", nil];
-    for(NSString *keyword in porkKeywords){
-        if([[currentMeal objectForKey:@"description"] rangeOfString:keyword].length > 0){
-            [currentMeal setValue:[NSNumber numberWithBool:YES] forKey:@"info"];
+    NSDictionary *regularExpressions = [NSDictionary dictionaryWithObjectsAndKeys:
+                                        @"(^V | V )", @"isVegetarian",
+                                        @"(^R+S |^S| R+S | S |Schwein)", @"containsPork",
+                                        @"(^R+S |^R| R+S | R |Rind)", @"containsBeef",
+                                        nil];
+    NSArray *removeStrings = [NSArray arrayWithObjects:@" R+S ", @"R+S ", @"V ", @" V ", @"R ", @"S ",  @" R ", @" S ", nil];
+    
+    for(NSString *key in [regularExpressions allKeys]){
+        NSError *error = NULL;
+        NSString *expressionString = [regularExpressions objectForKey:key];
+        NSRegularExpression *expression = [NSRegularExpression regularExpressionWithPattern:expressionString
+                                                  options:NSRegularExpressionCaseInsensitive 
+                                                    error:&error];
+        NSString *descriptionString = [self.currentMeal valueForKey:@"description"];
+        NSRange range = [expression rangeOfFirstMatchInString:descriptionString 
+                                                      options:0 
+                                                        range:NSMakeRange(0, [descriptionString length])];
+        if (!NSEqualRanges(range, NSMakeRange(NSNotFound, 0))) 
+        {
+            [currentMeal setValue:[NSNumber numberWithBool:YES] forKey:key];
         }
+    }
+    for(NSString *stringToRemove in removeStrings){
+        NSString *descriptionString = [self.currentMeal valueForKey:@"description"];
+        descriptionString = [descriptionString stringByReplacingOccurrencesOfString:stringToRemove withString:@""];
+        [self.currentMeal setValue:descriptionString forKey:@"description"];
     }
 }
 
