@@ -64,7 +64,6 @@ didFinishParsingMenu:(NSArray*)parsedMenu
 	currentlyLoading = NO;
 	self.loadingOverlayView.hidden = YES;
     self.menus = parsedMenu;
-    NSLog(@"%@", parsedMenu);
 	[tableView reloadData];
 }
 

@@ -87,10 +87,8 @@ foundCharacters:(NSString *)string
 {
     if([elementName isEqualToString:@"mealPlan"]){
         BOOL dateIsFuture = [[self.currentMealPlan objectForKey:@"date"] timeIntervalSinceDate:[NSDate date]] >= (-1) * 60 * 60 * 24;
-        NSLog(@"Meal plan date: %@", [self.currentMealPlan objectForKey:@"date"]);
         if(daysParsed < kFutureCanteenDatesParsed && dateIsFuture && validPriceForCurrentMealPlan){
             [self.menu addObject:self.currentMealPlan];
-            NSLog(@"Found a menu");
             daysParsed++;
         }
     }

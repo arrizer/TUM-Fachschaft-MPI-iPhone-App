@@ -12,8 +12,6 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		28216C970DB411BC00E5133A /* FSMPIClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28216C960DB411BC00E5133A /* FSMPIClockViewController.m */; };
-		282CCBFE0DB6C98000C4EA27 /* FSMPINewsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 282CCBFD0DB6C98000C4EA27 /* FSMPINewsView.xib */; };
-		2840D7CE1179279E00D7F93C /* FSMPIClockView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2840D7CD1179279E00D7F93C /* FSMPIClockView.xib */; };
 		288765080DF74369002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765070DF74369002DB57D /* CoreGraphics.framework */; };
 		390463FD121F266700D62C52 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = 390463F8121F266700D62C52 /* TFHpple.m */; };
 		390463FE121F266700D62C52 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 390463FA121F266700D62C52 /* TFHppleElement.m */; };
@@ -29,7 +27,6 @@
 		3904659E121F451000D62C52 /* N27.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3904659B121F450F00D62C52 /* N27.gif */; };
 		390465A5121F454B00D62C52 /* 23.gif in Resources */ = {isa = PBXBuildFile; fileRef = 390465A4121F454B00D62C52 /* 23.gif */; };
 		390465D2121F4FB200D62C52 /* FSMPIMensaParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 390465D1121F4FB200D62C52 /* FSMPIMensaParser.m */; };
-		3907E108136991C0000E9247 /* FSMPIPubTransportCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3907E107136991C0000E9247 /* FSMPIPubTransportCell.xib */; };
 		3907E10C13699664000E9247 /* link_intum.png in Resources */ = {isa = PBXBuildFile; fileRef = 3907E10913699664000E9247 /* link_intum.png */; };
 		3907E10D13699664000E9247 /* link_matum.png in Resources */ = {isa = PBXBuildFile; fileRef = 3907E10A13699664000E9247 /* link_matum.png */; };
 		3907E10E13699664000E9247 /* link_phtum.png in Resources */ = {isa = PBXBuildFile; fileRef = 3907E10B13699664000E9247 /* link_phtum.png */; };
@@ -39,20 +36,29 @@
 		390DB292137D3BD600E2B805 /* canteens.plist in Resources */ = {isa = PBXBuildFile; fileRef = 390DB291137D3BD600E2B805 /* canteens.plist */; };
 		390DB295137D503600E2B805 /* canteen_loske.png in Resources */ = {isa = PBXBuildFile; fileRef = 390DB293137D503600E2B805 /* canteen_loske.png */; };
 		390DB296137D503600E2B805 /* canteen_mensa.png in Resources */ = {isa = PBXBuildFile; fileRef = 390DB294137D503600E2B805 /* canteen_mensa.png */; };
-		390DB29B137D767D00E2B805 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 390DB29A137D767D00E2B805 /* MainWindow.xib */; };
 		3918774A125FF610005F24ED /* FSMPIMensaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39187749125FF610005F24ED /* FSMPIMensaCell.xib */; };
 		39369B44121EAF9200AD9866 /* FSMPIMVGParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 39369B43121EAF9200AD9866 /* FSMPIMVGParser.m */; };
 		393915D41222E16200411491 /* FSMPINewsParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 393915D31222E16200411491 /* FSMPINewsParser.m */; };
+		396DF2F813CF6C5D00513C88 /* FSMPIClockView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 396DF2EC13CF6C5D00513C88 /* FSMPIClockView.xib */; };
+		396DF2F913CF6C5D00513C88 /* FSMPIFMICanteenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 396DF2EE13CF6C5D00513C88 /* FSMPIFMICanteenView.xib */; };
+		396DF2FA13CF6C5D00513C88 /* FSMPIMensaView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 396DF2F013CF6C5D00513C88 /* FSMPIMensaView.xib */; };
+		396DF2FB13CF6C5D00513C88 /* FSMPINewsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 396DF2F213CF6C5D00513C88 /* FSMPINewsView.xib */; };
+		396DF2FC13CF6C5D00513C88 /* FSMPIPubTransportCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 396DF2F413CF6C5D00513C88 /* FSMPIPubTransportCell.xib */; };
+		396DF2FD13CF6C5D00513C88 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 396DF2F613CF6C5D00513C88 /* MainWindow.xib */; };
+		396DF30413CF6C6700513C88 /* FSMPIClockView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 396DF2EC13CF6C5D00513C88 /* FSMPIClockView.xib */; };
+		396DF30513CF6C6700513C88 /* FSMPIFMICanteenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 396DF2EE13CF6C5D00513C88 /* FSMPIFMICanteenView.xib */; };
+		396DF30613CF6C6700513C88 /* FSMPIMensaView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 396DF2F013CF6C5D00513C88 /* FSMPIMensaView.xib */; };
+		396DF30713CF6C6700513C88 /* FSMPINewsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 396DF2F213CF6C5D00513C88 /* FSMPINewsView.xib */; };
+		396DF30813CF6C6700513C88 /* FSMPIPubTransportCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 396DF2F413CF6C5D00513C88 /* FSMPIPubTransportCell.xib */; };
+		396DF30913CF6C6700513C88 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 396DF2F613CF6C5D00513C88 /* MainWindow.xib */; };
 		3981935C136988D900205ACC /* tutorial.html in Resources */ = {isa = PBXBuildFile; fileRef = 3981935E136988D900205ACC /* tutorial.html */; };
 		3981936213698C2800205ACC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3981936413698C2800205ACC /* Localizable.strings */; };
-		39854DD813C65CE2007C2AC4 /* MealProperties.plist in Resources */ = {isa = PBXBuildFile; fileRef = 39854DD713C65CE2007C2AC4 /* MealProperties.plist */; };
 		39854DDA13C66135007C2AC4 /* vegetarian.png in Resources */ = {isa = PBXBuildFile; fileRef = 39854DD913C66135007C2AC4 /* vegetarian.png */; };
 		39854DDD13C66886007C2AC4 /* beef.png in Resources */ = {isa = PBXBuildFile; fileRef = 39854DDB13C66886007C2AC4 /* beef.png */; };
 		39854DDE13C66886007C2AC4 /* pork.png in Resources */ = {isa = PBXBuildFile; fileRef = 39854DDC13C66886007C2AC4 /* pork.png */; };
 		399F31B113670D5200CE456A /* news_template.html in Resources */ = {isa = PBXBuildFile; fileRef = 399F31B013670D5200CE456A /* news_template.html */; };
 		39BFD2A812201C3300155D97 /* 27.gif in Resources */ = {isa = PBXBuildFile; fileRef = 39BFD2A712201C3300155D97 /* 27.gif */; };
 		39C0785313B2445200D8BA85 /* FSMPIFMICanteenParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 39C0785213B2445200D8BA85 /* FSMPIFMICanteenParser.m */; };
-		39C0785513B24D3D00D8BA85 /* FSMPIFMICanteenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39C0785413B24D3C00D8BA85 /* FSMPIFMICanteenView.xib */; };
 		39C0785713B24D8800D8BA85 /* FSMPIFMICanteenCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39C0785613B24D8800D8BA85 /* FSMPIFMICanteenCell.xib */; };
 		39C0785A13B2506C00D8BA85 /* FSMPIFMICanteenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39C0785913B2506B00D8BA85 /* FSMPIFMICanteenViewController.m */; };
 		39FCBC8C13194E6C00768622 /* FSMPINewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39FCBC8B13194E6C00768622 /* FSMPINewsCell.xib */; };
@@ -60,7 +66,6 @@
 		7E91A27D121C87EB00E5B8C6 /* clock_case.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E91A27A121C87EB00E5B8C6 /* clock_case.png */; };
 		7E91A27F121C884B00E5B8C6 /* clock_ball.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E91A27E121C884B00E5B8C6 /* clock_ball.png */; };
 		7E91A293121C8A8A00E5B8C6 /* FSMPILinksView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E91A292121C8A8A00E5B8C6 /* FSMPILinksView.xib */; };
-		7E91A29F121C8BAF00E5B8C6 /* FSMPIMensaView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E91A29E121C8BAF00E5B8C6 /* FSMPIMensaView.xib */; };
 		7E91A2A1121C8BCE00E5B8C6 /* FSMPIPubTransportView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E91A2A0121C8BCE00E5B8C6 /* FSMPIPubTransportView.xib */; };
 		7E91A2B3121C8CEC00E5B8C6 /* FSMPIMensaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E91A2B2121C8CEC00E5B8C6 /* FSMPIMensaViewController.m */; };
 		7E91A2B6121C8D0B00E5B8C6 /* FSMPIPubTransportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E91A2B5121C8D0B00E5B8C6 /* FSMPIPubTransportViewController.m */; };
@@ -91,8 +96,6 @@
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		28216C950DB411BC00E5133A /* FSMPIClockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMPIClockViewController.h; sourceTree = "<group>"; };
 		28216C960DB411BC00E5133A /* FSMPIClockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMPIClockViewController.m; sourceTree = "<group>"; };
-		282CCBFD0DB6C98000C4EA27 /* FSMPINewsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = FSMPINewsView.xib; path = XIB/FSMPINewsView.xib; sourceTree = "<group>"; };
-		2840D7CD1179279E00D7F93C /* FSMPIClockView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FSMPIClockView.xib; path = XIB/FSMPIClockView.xib; sourceTree = "<group>"; };
 		288765070DF74369002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		28A0AB4B0D9B1048005BE974 /* FachschaftMPI_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FachschaftMPI_Prefix.pch; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -114,7 +117,6 @@
 		390465A4121F454B00D62C52 /* 23.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = 23.gif; path = Resources/Images/MVGIcons/23.gif; sourceTree = "<group>"; };
 		390465D0121F4FB200D62C52 /* FSMPIMensaParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMPIMensaParser.h; sourceTree = "<group>"; };
 		390465D1121F4FB200D62C52 /* FSMPIMensaParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMPIMensaParser.m; sourceTree = "<group>"; };
-		3907E107136991C0000E9247 /* FSMPIPubTransportCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FSMPIPubTransportCell.xib; path = XIB/FSMPIPubTransportCell.xib; sourceTree = "<group>"; };
 		3907E10913699664000E9247 /* link_intum.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = link_intum.png; path = Resources/Images/link_intum.png; sourceTree = "<group>"; };
 		3907E10A13699664000E9247 /* link_matum.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = link_matum.png; path = Resources/Images/link_matum.png; sourceTree = "<group>"; };
 		3907E10B13699664000E9247 /* link_phtum.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = link_phtum.png; path = Resources/Images/link_phtum.png; sourceTree = "<group>"; };
@@ -125,17 +127,27 @@
 		390DB291137D3BD600E2B805 /* canteens.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = canteens.plist; path = Resources/Other/canteens.plist; sourceTree = "<group>"; };
 		390DB293137D503600E2B805 /* canteen_loske.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = canteen_loske.png; path = Resources/Images/canteen_loske.png; sourceTree = "<group>"; };
 		390DB294137D503600E2B805 /* canteen_mensa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = canteen_mensa.png; path = Resources/Images/canteen_mensa.png; sourceTree = "<group>"; };
-		390DB29A137D767D00E2B805 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainWindow.xib; path = XIB/MainWindow.xib; sourceTree = "<group>"; };
 		39187749125FF610005F24ED /* FSMPIMensaCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = FSMPIMensaCell.xib; path = XIB/FSMPIMensaCell.xib; sourceTree = "<group>"; };
 		39369B42121EAF9200AD9866 /* FSMPIMVGParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMPIMVGParser.h; sourceTree = "<group>"; };
 		39369B43121EAF9200AD9866 /* FSMPIMVGParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMPIMVGParser.m; sourceTree = "<group>"; };
 		393915D21222E16200411491 /* FSMPINewsParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMPINewsParser.h; sourceTree = "<group>"; };
 		393915D31222E16200411491 /* FSMPINewsParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMPINewsParser.m; sourceTree = "<group>"; };
+		396DF2ED13CF6C5D00513C88 /* de */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = de; path = de.lproj/FSMPIClockView.xib; sourceTree = "<group>"; };
+		396DF2EF13CF6C5D00513C88 /* de */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = de; path = de.lproj/FSMPIFMICanteenView.xib; sourceTree = "<group>"; };
+		396DF2F113CF6C5D00513C88 /* de */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = de; path = de.lproj/FSMPIMensaView.xib; sourceTree = "<group>"; };
+		396DF2F313CF6C5D00513C88 /* de */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = de; path = de.lproj/FSMPINewsView.xib; sourceTree = "<group>"; };
+		396DF2F513CF6C5D00513C88 /* de */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = de; path = de.lproj/FSMPIPubTransportCell.xib; sourceTree = "<group>"; };
+		396DF2F713CF6C5D00513C88 /* de */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = de; path = de.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		396DF2FE13CF6C6700513C88 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FSMPIClockView.xib; sourceTree = "<group>"; };
+		396DF2FF13CF6C6700513C88 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FSMPIFMICanteenView.xib; sourceTree = "<group>"; };
+		396DF30013CF6C6700513C88 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FSMPIMensaView.xib; sourceTree = "<group>"; };
+		396DF30113CF6C6700513C88 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FSMPINewsView.xib; sourceTree = "<group>"; };
+		396DF30213CF6C6700513C88 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FSMPIPubTransportCell.xib; sourceTree = "<group>"; };
+		396DF30313CF6C6700513C88 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		3981935D136988D900205ACC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = en; path = en.lproj/tutorial.html; sourceTree = "<group>"; };
 		3981935F1369890D00205ACC /* de */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = de; path = de.lproj/tutorial.html; sourceTree = "<group>"; };
 		3981936313698C2800205ACC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3981936513698C3A00205ACC /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
-		39854DD713C65CE2007C2AC4 /* MealProperties.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = MealProperties.plist; path = Resources/Other/MealProperties.plist; sourceTree = "<group>"; };
 		39854DD913C66135007C2AC4 /* vegetarian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = vegetarian.png; path = Resources/Images/MealIcons/vegetarian.png; sourceTree = "<group>"; };
 		39854DDB13C66886007C2AC4 /* beef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = beef.png; path = Resources/Images/MealIcons/beef.png; sourceTree = "<group>"; };
 		39854DDC13C66886007C2AC4 /* pork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pork.png; path = Resources/Images/MealIcons/pork.png; sourceTree = "<group>"; };
@@ -143,7 +155,6 @@
 		39BFD2A712201C3300155D97 /* 27.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = 27.gif; path = Resources/Images/MVGIcons/27.gif; sourceTree = "<group>"; };
 		39C0785113B2445200D8BA85 /* FSMPIFMICanteenParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMPIFMICanteenParser.h; sourceTree = "<group>"; };
 		39C0785213B2445200D8BA85 /* FSMPIFMICanteenParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMPIFMICanteenParser.m; sourceTree = "<group>"; };
-		39C0785413B24D3C00D8BA85 /* FSMPIFMICanteenView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FSMPIFMICanteenView.xib; path = XIB/FSMPIFMICanteenView.xib; sourceTree = "<group>"; };
 		39C0785613B24D8800D8BA85 /* FSMPIFMICanteenCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FSMPIFMICanteenCell.xib; path = XIB/FSMPIFMICanteenCell.xib; sourceTree = "<group>"; };
 		39C0785813B2506B00D8BA85 /* FSMPIFMICanteenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMPIFMICanteenViewController.h; sourceTree = "<group>"; };
 		39C0785913B2506B00D8BA85 /* FSMPIFMICanteenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMPIFMICanteenViewController.m; sourceTree = "<group>"; };
@@ -152,7 +163,6 @@
 		7E91A27A121C87EB00E5B8C6 /* clock_case.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = clock_case.png; path = Resources/Images/clock_case.png; sourceTree = "<group>"; };
 		7E91A27E121C884B00E5B8C6 /* clock_ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = clock_ball.png; path = Resources/Images/clock_ball.png; sourceTree = "<group>"; };
 		7E91A292121C8A8A00E5B8C6 /* FSMPILinksView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FSMPILinksView.xib; path = XIB/FSMPILinksView.xib; sourceTree = "<group>"; };
-		7E91A29E121C8BAF00E5B8C6 /* FSMPIMensaView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = FSMPIMensaView.xib; path = XIB/FSMPIMensaView.xib; sourceTree = "<group>"; };
 		7E91A2A0121C8BCE00E5B8C6 /* FSMPIPubTransportView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = FSMPIPubTransportView.xib; path = XIB/FSMPIPubTransportView.xib; sourceTree = "<group>"; };
 		7E91A2B1121C8CEC00E5B8C6 /* FSMPIMensaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMPIMensaViewController.h; sourceTree = "<group>"; };
 		7E91A2B2121C8CEC00E5B8C6 /* FSMPIMensaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMPIMensaViewController.m; sourceTree = "<group>"; };
@@ -243,7 +253,6 @@
 				7E91A277121C87DB00E5B8C6 /* Images */,
 				7E91A2A2121C8BE000E5B8C6 /* XIB */,
 				7ED5C3D1121CE254006A25C7 /* Other */,
-				39854DD713C65CE2007C2AC4 /* MealProperties.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -370,17 +379,17 @@
 		7E91A2A2121C8BE000E5B8C6 /* XIB */ = {
 			isa = PBXGroup;
 			children = (
-				390DB29A137D767D00E2B805 /* MainWindow.xib */,
-				2840D7CD1179279E00D7F93C /* FSMPIClockView.xib */,
-				282CCBFD0DB6C98000C4EA27 /* FSMPINewsView.xib */,
-				7E91A29E121C8BAF00E5B8C6 /* FSMPIMensaView.xib */,
+				396DF2EC13CF6C5D00513C88 /* FSMPIClockView.xib */,
+				396DF2EE13CF6C5D00513C88 /* FSMPIFMICanteenView.xib */,
+				396DF2F013CF6C5D00513C88 /* FSMPIMensaView.xib */,
+				396DF2F213CF6C5D00513C88 /* FSMPINewsView.xib */,
+				396DF2F413CF6C5D00513C88 /* FSMPIPubTransportCell.xib */,
+				396DF2F613CF6C5D00513C88 /* MainWindow.xib */,
 				39187749125FF610005F24ED /* FSMPIMensaCell.xib */,
 				7E91A2A0121C8BCE00E5B8C6 /* FSMPIPubTransportView.xib */,
-				3907E107136991C0000E9247 /* FSMPIPubTransportCell.xib */,
 				7E91A292121C8A8A00E5B8C6 /* FSMPILinksView.xib */,
 				7ED5C424121CEC64006A25C7 /* FSMPILinkCell.xib */,
 				39FCBC8B13194E6C00768622 /* FSMPINewsCell.xib */,
-				39C0785413B24D3C00D8BA85 /* FSMPIFMICanteenView.xib */,
 				39C0785613B24D8800D8BA85 /* FSMPIFMICanteenCell.xib */,
 			);
 			name = XIB;
@@ -451,13 +460,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				282CCBFE0DB6C98000C4EA27 /* FSMPINewsView.xib in Resources */,
-				2840D7CE1179279E00D7F93C /* FSMPIClockView.xib in Resources */,
 				7E91A27B121C87EB00E5B8C6 /* clock_background.png in Resources */,
 				7E91A27D121C87EB00E5B8C6 /* clock_case.png in Resources */,
 				7E91A27F121C884B00E5B8C6 /* clock_ball.png in Resources */,
 				7E91A293121C8A8A00E5B8C6 /* FSMPILinksView.xib in Resources */,
-				7E91A29F121C8BAF00E5B8C6 /* FSMPIMensaView.xib in Resources */,
 				7E91A2A1121C8BCE00E5B8C6 /* FSMPIPubTransportView.xib in Resources */,
 				7ED5C1BE121C9E54006A25C7 /* tab_news.png in Resources */,
 				7ED5C1C1121C9EA3006A25C7 /* tab_clock.png in Resources */,
@@ -490,7 +496,6 @@
 				39FCBC8C13194E6C00768622 /* FSMPINewsCell.xib in Resources */,
 				399F31B113670D5200CE456A /* news_template.html in Resources */,
 				3981936213698C2800205ACC /* Localizable.strings in Resources */,
-				3907E108136991C0000E9247 /* FSMPIPubTransportCell.xib in Resources */,
 				3907E10C13699664000E9247 /* link_intum.png in Resources */,
 				3907E10D13699664000E9247 /* link_matum.png in Resources */,
 				3907E10E13699664000E9247 /* link_phtum.png in Resources */,
@@ -499,13 +504,22 @@
 				390DB292137D3BD600E2B805 /* canteens.plist in Resources */,
 				390DB295137D503600E2B805 /* canteen_loske.png in Resources */,
 				390DB296137D503600E2B805 /* canteen_mensa.png in Resources */,
-				390DB29B137D767D00E2B805 /* MainWindow.xib in Resources */,
-				39C0785513B24D3D00D8BA85 /* FSMPIFMICanteenView.xib in Resources */,
 				39C0785713B24D8800D8BA85 /* FSMPIFMICanteenCell.xib in Resources */,
-				39854DD813C65CE2007C2AC4 /* MealProperties.plist in Resources */,
 				39854DDA13C66135007C2AC4 /* vegetarian.png in Resources */,
 				39854DDD13C66886007C2AC4 /* beef.png in Resources */,
 				39854DDE13C66886007C2AC4 /* pork.png in Resources */,
+				396DF2F813CF6C5D00513C88 /* FSMPIClockView.xib in Resources */,
+				396DF2F913CF6C5D00513C88 /* FSMPIFMICanteenView.xib in Resources */,
+				396DF2FA13CF6C5D00513C88 /* FSMPIMensaView.xib in Resources */,
+				396DF2FB13CF6C5D00513C88 /* FSMPINewsView.xib in Resources */,
+				396DF2FC13CF6C5D00513C88 /* FSMPIPubTransportCell.xib in Resources */,
+				396DF2FD13CF6C5D00513C88 /* MainWindow.xib in Resources */,
+				396DF30413CF6C6700513C88 /* FSMPIClockView.xib in Resources */,
+				396DF30513CF6C6700513C88 /* FSMPIFMICanteenView.xib in Resources */,
+				396DF30613CF6C6700513C88 /* FSMPIMensaView.xib in Resources */,
+				396DF30713CF6C6700513C88 /* FSMPINewsView.xib in Resources */,
+				396DF30813CF6C6700513C88 /* FSMPIPubTransportCell.xib in Resources */,
+				396DF30913CF6C6700513C88 /* MainWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,6 +552,60 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		396DF2EC13CF6C5D00513C88 /* FSMPIClockView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				396DF2ED13CF6C5D00513C88 /* de */,
+				396DF2FE13CF6C6700513C88 /* en */,
+			);
+			name = FSMPIClockView.xib;
+			sourceTree = "<group>";
+		};
+		396DF2EE13CF6C5D00513C88 /* FSMPIFMICanteenView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				396DF2EF13CF6C5D00513C88 /* de */,
+				396DF2FF13CF6C6700513C88 /* en */,
+			);
+			name = FSMPIFMICanteenView.xib;
+			sourceTree = "<group>";
+		};
+		396DF2F013CF6C5D00513C88 /* FSMPIMensaView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				396DF2F113CF6C5D00513C88 /* de */,
+				396DF30013CF6C6700513C88 /* en */,
+			);
+			name = FSMPIMensaView.xib;
+			sourceTree = "<group>";
+		};
+		396DF2F213CF6C5D00513C88 /* FSMPINewsView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				396DF2F313CF6C5D00513C88 /* de */,
+				396DF30113CF6C6700513C88 /* en */,
+			);
+			name = FSMPINewsView.xib;
+			sourceTree = "<group>";
+		};
+		396DF2F413CF6C5D00513C88 /* FSMPIPubTransportCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				396DF2F513CF6C5D00513C88 /* de */,
+				396DF30213CF6C6700513C88 /* en */,
+			);
+			name = FSMPIPubTransportCell.xib;
+			sourceTree = "<group>";
+		};
+		396DF2F613CF6C5D00513C88 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				396DF2F713CF6C5D00513C88 /* de */,
+				396DF30313CF6C6700513C88 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
 		3981935E136988D900205ACC /* tutorial.html */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -574,7 +642,7 @@
 				GCC_PREFIX_HEADER = FachschaftMPI_Prefix.pch;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "FachschaftMPI-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.1;
 				PRODUCT_NAME = FachschaftMPI;
 				PROVISIONING_PROFILE = "F0B5BCA8-0EA8-4D18-ACF5-BC90125D2B8D";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F0B5BCA8-0EA8-4D18-ACF5-BC90125D2B8D";
@@ -595,7 +663,7 @@
 				GCC_PREFIX_HEADER = FachschaftMPI_Prefix.pch;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "FachschaftMPI-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.1;
 				PRODUCT_NAME = FachschaftMPI;
 				PROVISIONING_PROFILE = "F0B5BCA8-0EA8-4D18-ACF5-BC90125D2B8D";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F0B5BCA8-0EA8-4D18-ACF5-BC90125D2B8D";
@@ -620,7 +688,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "${SDKROOT}/usr/include/libxml2";
-				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = "-lxml2";
 				PROVISIONING_PROFILE = "F0B5BCA8-0EA8-4D18-ACF5-BC90125D2B8D";
@@ -643,7 +711,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "${SDKROOT}/usr/include/libxml2";
-				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				OTHER_LDFLAGS = "-lxml2";
