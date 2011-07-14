@@ -10,7 +10,9 @@
 -(void)viewDidLoad{
     NSString *path = [[NSBundle mainBundle] pathForResource:@"canteens" ofType:@"plist"];
     canteens = [[NSArray alloc] initWithContentsOfURL:[NSURL fileURLWithPath:path]];
-    [navigationController setTitle:NSLocalizedString(@"Canteens", @"Canteen list title")];
+    [self setTitle:NSLocalizedString(@"Canteens", @"Canteen list title")];
+    NSLog(@"%@", NSLocalizedString(@"Canteens", @"Canteen list title"));
+    //[self setTitle:@"Foo"];
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -83,7 +85,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
       willShowViewController:(UIViewController *)viewController 
                     animated:(BOOL)animated
 {
-    if(viewController == self) [navigationController setTitle:NSLocalizedString(@"Canteens", @"Canteen list title")];
+    //if(viewController == self) [navigationController setTitle:NSLocalizedString(@"Canteen", @"Canteen list title")];
 }
 
 @end

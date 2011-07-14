@@ -17,7 +17,7 @@ const CGFloat kNewsCellHeight = 109;
 	[dateFormatter setTimeZone:[NSTimeZone systemTimeZone]];
 	//[dateFormatter setLocale:[NSLocale currentLocale]];
 	[dateFormatter setDateFormat:@"Y-MM-dd'T'HH:mm:ss'Z'"];
-    [navigationController setTitle:NSLocalizedString(@"News", @"News title")];
+    [self setTitle:NSLocalizedString(@"News", @"News title")];
 }
 
 #pragma mark -

@@ -137,7 +137,6 @@
 		396DF2F113CF6C5D00513C88 /* de */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = de; path = de.lproj/FSMPIMensaView.xib; sourceTree = "<group>"; };
 		396DF2F313CF6C5D00513C88 /* de */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = de; path = de.lproj/FSMPINewsView.xib; sourceTree = "<group>"; };
 		396DF2F513CF6C5D00513C88 /* de */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = de; path = de.lproj/FSMPIPubTransportCell.xib; sourceTree = "<group>"; };
-		396DF2F713CF6C5D00513C88 /* de */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = de; path = de.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		396DF2FE13CF6C6700513C88 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FSMPIClockView.xib; sourceTree = "<group>"; };
 		396DF2FF13CF6C6700513C88 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FSMPIFMICanteenView.xib; sourceTree = "<group>"; };
 		396DF30013CF6C6700513C88 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FSMPIMensaView.xib; sourceTree = "<group>"; };
@@ -152,6 +151,7 @@
 		39854DDB13C66886007C2AC4 /* beef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = beef.png; path = Resources/Images/MealIcons/beef.png; sourceTree = "<group>"; };
 		39854DDC13C66886007C2AC4 /* pork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pork.png; path = Resources/Images/MealIcons/pork.png; sourceTree = "<group>"; };
 		399F31B013670D5200CE456A /* news_template.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = news_template.html; path = Resources/Other/news_template.html; sourceTree = "<group>"; };
+		39BCF07E13CF74A800F1261F /* de */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = de; path = de.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		39BFD2A712201C3300155D97 /* 27.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = 27.gif; path = Resources/Images/MVGIcons/27.gif; sourceTree = "<group>"; };
 		39C0785113B2445200D8BA85 /* FSMPIFMICanteenParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMPIFMICanteenParser.h; sourceTree = "<group>"; };
 		39C0785213B2445200D8BA85 /* FSMPIFMICanteenParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMPIFMICanteenParser.m; sourceTree = "<group>"; };
@@ -600,8 +600,8 @@
 		396DF2F613CF6C5D00513C88 /* MainWindow.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				396DF2F713CF6C5D00513C88 /* de */,
 				396DF30313CF6C6700513C88 /* en */,
+				39BCF07E13CF74A800F1261F /* de */,
 			);
 			name = MainWindow.xib;
 			sourceTree = "<group>";
