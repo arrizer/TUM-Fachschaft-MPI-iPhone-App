@@ -116,22 +116,6 @@
 			</dict>
 			<dict>
 				<key>icon</key>
-				<string>link_grundstudium.png</string>
-				<key>subtitle_de</key>
-				<string>Haus-/Tutoraufgabenblätter</string>
-				<key>subtitle_en</key>
-				<string>Manage class assignments</string>
-				<key>title_de</key>
-				<string>Grundstudiumstool</string>
-				<key>title_en</key>
-				<string>Assignments tool</string>
-				<key>url_de</key>
-				<string>https://grundstudium.in.tum.de/</string>
-				<key>url_en</key>
-				<string>https://grundstudium.in.tum.de/</string>
-			</dict>
-			<dict>
-				<key>icon</key>
 				<string>link_biblio.png</string>
 				<key>subtitle_de</key>
 				<string>Katalog und Ausleihe</string>
@@ -142,9 +126,9 @@
 				<key>title_en</key>
 				<string>Library</string>
 				<key>url_de</key>
-				<string>https://grundstudium.in.tum.de/</string>
+				<string>https://opac.ub.tum.de/InfoGuideClient.tumsis/start.do?Login=wotum01</string>
 				<key>url_en</key>
-				<string>https://grundstudium.in.tum.de/</string>
+				<string>https://opac.ub.tum.de/InfoGuideClient.tumsis/start.do?Login=wotum01</string>
 			</dict>
 		</array>
 	</dict>

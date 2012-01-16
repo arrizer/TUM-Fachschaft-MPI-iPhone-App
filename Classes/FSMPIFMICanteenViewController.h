@@ -23,7 +23,6 @@
 @property (strong) IBOutlet UITableView *tableView;
 @property (strong) IBOutlet UITableViewCell *currentCell;
 @property (strong) IBOutlet UIView *loadingOverlayView;
-
 @property (strong) NSArray *menus;
 
 // Initializes the view controller with a mensa ID

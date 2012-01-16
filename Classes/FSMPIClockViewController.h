@@ -24,7 +24,7 @@
 @property (strong) NSMutableArray *ballImageViews;
 @property (strong) NSTimer *clockUpdateTimer;
 
-// Adds all ball image views in their default positions to the view
+// Adds all sphere image views in their default positions to the view
 - (void)setupClock;
 
 // Updates the clock view to the current time
