@@ -6,5 +6,7 @@
 	<true/>
 	<key>application-identifier</key>
 	<string>2J3C6P6X3N.de.tum.fs.mpi.app</string>
+	<key>Can be debugged</key>
+	<false/>
 </dict>
 </plist>

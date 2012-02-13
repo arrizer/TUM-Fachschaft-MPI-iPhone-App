@@ -684,6 +684,7 @@
 					"$(ARCHS_STANDARD_32_BIT)",
 					armv6,
 				);
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Matthias Schwab (E9CJWU22ZR)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Matthias Schwab (E9CJWU22ZR)";
 				GCC_C_LANGUAGE_STANDARD = c99;
