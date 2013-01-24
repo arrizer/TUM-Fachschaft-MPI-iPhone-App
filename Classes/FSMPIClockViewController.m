@@ -79,6 +79,12 @@ clockTutorialViewController, clockTutorialWebView;
 		}
 	}
 	[self updateClockAnimated:NO];
+    //NSLog(@"Height = %f", [self.clockCaseImageView superview].frame.size.height);
+    if([self.clockCaseImageView superview].frame.size.height == 548){
+        CGRect clockCaseFrame = self.clockCaseImageView.frame;
+        clockCaseFrame.origin.y = 20;
+        self.clockCaseImageView.frame = clockCaseFrame;
+    }
 }
 
 - (void)updateClock

@@ -1,0 +1,127 @@
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Lato Light Italic'), local('Lato-LightItalic'), url('Lato-LightItalic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url('Lato-Light.woff') format('woff');
+}
+
+html{
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-modify: read-only;
+  -moz-user-select: none;
+  -moz-user-modify: read-only;
+  cursor: default;
+}
+
+body{
+  background-image: url('pattern.png');
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  color: white;
+  font-size: 15px;
+}
+
+#wrapper{
+  max-width: 1000px;
+  margin: auto;
+}
+
+#features{
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 20px;
+  padding: 20px;
+  text-shadow: 0 0 8px black;
+  margin-top: 50px;
+  height: 672px;
+}
+
+#appstore{
+  float:right; 
+  border:none; 
+  margin-left:20px;
+  transform: scale(0.9);
+  transition: transform 0.1s linear;
+}
+
+#appstore:hover{
+  transform: scale(1) rotate(-2deg);
+}
+
+#intro{
+  font-size: 18px;
+  text-align: justify;
+}
+
+#head{
+  margin: auto;
+  margin-bottom: -40px;
+}
+
+h1{
+  font-size: 35px;
+  font-weight: normal;
+  margin: 0;
+  text-align: center;
+  text-shadow: 0 0 10px white;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px dotted white;
+}
+
+#features ul{
+  list-style: none;
+}
+
+#features ul li{
+  margin-top: 10px;
+}
+
+#features ul li p{
+  margin: 2px 0 2px 0;
+}
+
+#iphone{
+  width: 396px;
+  height: 744px;
+  background-image: url('phone.png');
+  background-repeat: no-repeat;
+  position: relative;
+  float: left;
+  margin-right: 10px;
+  margin-top: -30px;
+  margin-left: -70px;
+}
+
+.screenshot{
+  position: absolute;
+  top: 146px;
+  left: 38px;
+}
+
+h2{
+  font-size: 25px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.english{
+  /*opacity: 0.5;*/
+  color: rgb(128,128,128);
+}
+
+#footer{
+  width: 100%;
+  opacity: 0.6;
+  font-size: 15px;
+  float: left;
+  text-align: center;
+}

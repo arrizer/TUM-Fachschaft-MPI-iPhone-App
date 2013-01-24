@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <archive type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="7.10">
 	<data>
-		<int key="IBDocument.SystemTarget">1280</int>
-		<string key="IBDocument.SystemVersion">11C74</string>
-		<string key="IBDocument.InterfaceBuilderVersion">1934</string>
-		<string key="IBDocument.AppKitVersion">1138.23</string>
-		<string key="IBDocument.HIToolboxVersion">567.00</string>
+		<int key="IBDocument.SystemTarget">1536</int>
+		<string key="IBDocument.SystemVersion">12C3012</string>
+		<string key="IBDocument.InterfaceBuilderVersion">3081</string>
+		<string key="IBDocument.AppKitVersion">1187.34</string>
+		<string key="IBDocument.HIToolboxVersion">625.00</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-			<string key="NS.object.0">931</string>
+			<string key="NS.object.0">2080</string>
 		</object>
 		<object class="NSArray" key="IBDocument.IntegratedClassDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<string>IBUIView</string>
-			<string>IBUIImageView</string>
-			<string>IBUIViewController</string>
-			<string>IBUILabel</string>
 			<string>IBProxyObject</string>
-			<string>IBUIToolbar</string>
-			<string>IBUIWebView</string>
 			<string>IBUIBarButtonItem</string>
 			<string>IBUIButton</string>
+			<string>IBUIImageView</string>
+			<string>IBUILabel</string>
+			<string>IBUIToolbar</string>
+			<string>IBUIView</string>
+			<string>IBUIViewController</string>
+			<string>IBUIWebView</string>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -82,7 +82,7 @@
 					</object>
 					<object class="IBUILabel" id="841130895">
 						<reference key="NSNextResponder" ref="191373211"/>
-						<int key="NSvFlags">290</int>
+						<int key="NSvFlags">266</int>
 						<string key="NSFrame">{{0, 358}, {320, 60}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
@@ -115,7 +115,7 @@
 					</object>
 					<object class="IBUIButton" id="4196636">
 						<reference key="NSNextResponder" ref="191373211"/>
-						<int key="NSvFlags">292</int>
+						<int key="NSvFlags">265</int>
 						<string key="NSFrame">{{289, 378}, {18, 19}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
@@ -158,15 +158,16 @@
 			</object>
 			<object class="IBUIViewController" id="119964043">
 				<object class="IBUIView" key="IBUIView" id="609065904">
-					<nil key="NSNextResponder"/>
+					<reference key="NSNextResponder"/>
 					<int key="NSvFlags">292</int>
 					<object class="NSMutableArray" key="NSSubviews">
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="IBUIToolbar" id="637283372">
 							<reference key="NSNextResponder" ref="609065904"/>
-							<int key="NSvFlags">266</int>
+							<int key="NSvFlags">290</int>
 							<string key="NSFrameSize">{320, 44}</string>
 							<reference key="NSSuperview" ref="609065904"/>
+							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="283756135"/>
 							<bool key="IBUIOpaque">NO</bool>
 							<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
@@ -184,14 +185,17 @@
 						</object>
 						<object class="IBUIWebView" id="283756135">
 							<reference key="NSNextResponder" ref="609065904"/>
-							<int key="NSvFlags">292</int>
+							<int key="NSvFlags">274</int>
 							<string key="NSFrame">{{0, 44}, {320, 416}}</string>
 							<reference key="NSSuperview" ref="609065904"/>
+							<reference key="NSWindow"/>
 							<reference key="IBUIBackgroundColor" ref="493457218"/>
 							<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						</object>
 					</object>
 					<string key="NSFrame">{{0, 20}, {320, 460}}</string>
+					<reference key="NSSuperview"/>
+					<reference key="NSWindow"/>
 					<reference key="NSNextKeyView" ref="637283372"/>
 					<reference key="IBUIBackgroundColor" ref="487560430"/>
 					<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -392,7 +396,7 @@
 					<string>8.IBPluginDependency</string>
 					<string>9.IBPluginDependency</string>
 				</object>
-				<object class="NSMutableArray" key="dict.values">
+				<object class="NSArray" key="dict.values">
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>FSMPIClockViewController</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -437,7 +441,7 @@
 							<string>hideClockTutorial</string>
 							<string>showClockTutorial</string>
 						</object>
-						<object class="NSMutableArray" key="dict.values">
+						<object class="NSArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>id</string>
 							<string>id</string>
@@ -450,7 +454,7 @@
 							<string>hideClockTutorial</string>
 							<string>showClockTutorial</string>
 						</object>
-						<object class="NSMutableArray" key="dict.values">
+						<object class="NSArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<object class="IBActionInfo">
 								<string key="name">hideClockTutorial</string>
@@ -471,7 +475,7 @@
 							<string>clockTutorialWebView</string>
 							<string>timeLabel</string>
 						</object>
-						<object class="NSMutableArray" key="dict.values">
+						<object class="NSArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>UIImageView</string>
 							<string>UIViewController</string>
@@ -488,7 +492,7 @@
 							<string>clockTutorialWebView</string>
 							<string>timeLabel</string>
 						</object>
-						<object class="NSMutableArray" key="dict.values">
+						<object class="NSArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<object class="IBToOneOutletInfo">
 								<string key="name">clockCaseImageView</string>
@@ -530,12 +534,12 @@
 				<string>clock_background.png</string>
 				<string>clock_case.png</string>
 			</object>
-			<object class="NSMutableArray" key="dict.values">
+			<object class="NSArray" key="dict.values">
 				<bool key="EncodedWithXMLCoder">YES</bool>
 				<string>{640, 960}</string>
 				<string>{640, 960}</string>
 			</object>
 		</object>
-		<string key="IBCocoaTouchPluginVersion">931</string>
+		<string key="IBCocoaTouchPluginVersion">2080</string>
 	</data>
 </archive>

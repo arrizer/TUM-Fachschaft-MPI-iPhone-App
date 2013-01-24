@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TUM FSMPI App</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="prefixfree.min.js"></script>
+    <script type="text/javascript">
+      var screenshots;
+      var currentScreenshot = 0;
+      
+      $(document).ready(function(){
+        screenshots = $('#iphone').children();
+        $('.screenshot').hide();
+        $(screenshots[0]).show();
+        setInterval(nextScreenshot, 5000);
+      });
+      
+      function nextScreenshot(){
+        $(screenshots[currentScreenshot]).fadeOut(2000);
+        currentScreenshot = (currentScreenshot + 1) % screenshots.length;
+        $(screenshots[currentScreenshot]).fadeIn(2000);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <img src="screens.png" id="head">
+      <h1>Die Fachschaft MPI App</h1>
+      <p id="intro">
+        <a id="appstore" href="http://www.google.de/" target="_blank">
+          <img src="appstore.png">
+        </a>
+        Endlich ist sie da. Die iPhone App der Fachschaft für Mathematik, Physik und Informatik der Technischen Universität München.
+        Für alle Studenten am Campus in Garching und am Stammgelände in der Münchner Innenstadt. Verfügbar in Deutsch und Englisch.
+        Kostenlos im App Store herunterladen.<br>
+        <span class="english">Finally it's here: The iPhone app of the student council for mathematics, physics and computer science of the technical university Munich.
+        For all students at the campus in Garching and the city.
+        Get it now for free at the App Store. Availble in english and german.</span>
+      </p>
+      <div id="features">
+        <div id="iphone">
+          <img src="screen_abacus.png" class="screenshot">
+          <img src="screen_news.png" class="screenshot">
+          <img src="screen_news2.png" class="screenshot">
+          <img src="screen_departures.png" class="screenshot">
+          <img src="screen_canteens.png" class="screenshot">
+          <img src="screen_mensa.png" class="screenshot">
+          <img src="screen_links.png" class="screenshot">
+        </div>
+        <ul>
+          <li>
+            <h2>Abakus Uhr&nbsp;&nbsp;&nbsp;<span class="english">Wooden abacus clock</span></h2>
+            <p>
+              Das Wahrzeichen der Informatik Fakultät zum Mitnehmen. 
+              Mit Erklärung zum Ablesen der Uhr. 
+              Funktioniert immer und sieht gut aus. 
+              Mehr Informationen gibts unter <a href="http://abakus.in.tum.de/" target="_blank">abakus.in.tum.de</a>
+            </p>
+            <p class="english">
+              The emblem of the computer science faculty to go.
+              Including instructions on how to read.
+              Always works and looks great.
+              More information about the clock at <a href="http://abakus.in.tum.de/" target="_blank">abakus.in.tum.de</a>
+            </p>
+          </li>
+          <li>
+            <h2>Neuigkeiten&nbsp;&nbsp;&nbsp;<span class="english">News</span></h2>
+            <p>
+              Aktuelle Informationen über Ereignisse und Aktivitäten der Fachschaft für alle Studenten. 
+              Hilft dir einfach immer auf dem Laufenden zu sein.
+            </p>
+            <p class="english">
+              Timely information about events and the activities of the student union for all students.
+              Helps you staying up to date all the time.
+            </p>
+          </li>
+          <li>
+            <h2>U-Bahn&nbsp;&nbsp;&nbsp;<span class="english">Subway</span></h2>
+            <p>
+              Aktuelle U-Bahn Abfahrtszeiten von Garching und den Haltestellen des Innenstadt Campus: Theresienstraße und Pinakotheken. 
+              Nie wieder die U-Bahn verpassen. Live Abfahrtszeiten direkt von der MVG.
+            </p>
+            <p class="english">
+              Live subway train and bus departures for Garching and the city campus stations: Theresienstraße and Pinakotheken. 
+              Never miss the subway again. Live departures directly from the MVG.
+            </p>
+          </li>
+          <li>
+            <h2>Mensa und Kantinen&nbsp;&nbsp;&nbsp;<span class="english">Mensa and canteens</span></h2>
+            <p>
+              Der Tagesaktuelle Speiseplan sowie für die kommenden Tage der Mensen in Garching und der Innenstadt sowie für die Kantinen
+              im Mathematik/Informatik Fakultäts-Gebäude und dem Max-Planck-Institut am Campus.
+              Mit Informationen für Vegetarier und Preisen.
+            </p>
+            <p class="english">
+              The daily meal and weekly meal plan for the Mensa in Garching and the city campus as well as the canteens in the
+              mathematics/computer science faculty building and the Max-Planck-Institute.
+              Including information for vegetarians and prices.
+            </p>
+          </li>
+          <li>
+            <h2>Links&nbsp;&nbsp;&nbsp;<span class="english">Links</span></h2>
+            <p>
+              Links zu den Fakultäts-Webseiten, Studienplänen der Bibliothek und weitern nützlichen Seiten und Anwendungen.
+              Alles auf einen Blick und schnell erreichbar.
+            </p>
+            <p class="english">
+              Links to faculty homepages, study plans, the library and more useful websites and utilities.
+              Everything at your fingertips.
+            </p>
+          </li>
+        </ul>
+      </div>
+      <p id="footer">
+        &copy; Technische Universität München &#x25E6; Entwickelt von <a href="mailto:schwab@fs.tum.de">Matthias</a> &#x25E6; Sourcecode und bug reports auf <a href="https://github.com/arrizer/TUM-Fachschaft-MPI-iPhone-App" target="_blank">Github</a>
+      </p>
+    </div>
+  </body>
+</html>
