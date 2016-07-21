@@ -127,7 +127,6 @@
 		39369B43121EAF9200AD9866 /* FSMPIMVGParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMPIMVGParser.m; sourceTree = "<group>"; };
 		393915D21222E16200411491 /* FSMPINewsParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMPINewsParser.h; sourceTree = "<group>"; };
 		393915D31222E16200411491 /* FSMPINewsParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMPINewsParser.m; sourceTree = "<group>"; };
-		395B97A21497A05200DC9F61 /* FachschaftMPI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = FachschaftMPI.entitlements; sourceTree = "<group>"; };
 		396DF2ED13CF6C5D00513C88 /* de */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = de; path = de.lproj/FSMPIClockView.xib; sourceTree = "<group>"; };
 		396DF2EF13CF6C5D00513C88 /* de */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = de; path = de.lproj/FSMPIFMICanteenView.xib; sourceTree = "<group>"; };
 		396DF2F113CF6C5D00513C88 /* de */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = de; path = de.lproj/FSMPIMensaView.xib; sourceTree = "<group>"; };
@@ -224,7 +223,6 @@
 		29B97314FDCFA39411CA2CEA /* FachschaftMPI */ = {
 			isa = PBXGroup;
 			children = (
-				395B97A21497A05200DC9F61 /* FachschaftMPI.entitlements */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -432,6 +430,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0610;
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = ECAXURL4MX;
+						DevelopmentTeamName = "Georg Jahnen";
+					};
+				};
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "FachschaftMPI" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -627,7 +631,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_ENTITLEMENTS = FachschaftMPI.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
@@ -652,7 +656,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_ENTITLEMENTS = FachschaftMPI.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
@@ -711,7 +715,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_ENTITLEMENTS = FachschaftMPI.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
