@@ -20,7 +20,7 @@ const NSUInteger kFutureDatesParsed = 3;
 - (void)parseReceivedData:(NSData*)data
 {
 	TFHpple *xPathParser = [[TFHpple alloc] initWithHTMLData:data];
-	NSArray *elements = [xPathParser search:@"//table[@class='menu']/tr/td[@class='gericht']|//table[@class='menu']/tr/td[@class='beschreibung']/span|//table[@class='menu']/tr/td[@class='headline']/span/a/strong"];
+	NSArray *elements = [xPathParser search:@"//table[@class='menu']/tr/td[@class='gericht']/span|//table[@class='menu']/tr/td[@class='beschreibung']/span|//table[@class='menu']/tr/td[@class='headline']/span/a/strong"];
 	NSMutableArray *dates = [[NSMutableArray alloc] init];
     NSMutableArray *menus;
 	NSMutableDictionary *menuItem;
@@ -57,16 +57,17 @@ const NSUInteger kFutureDatesParsed = 3;
 					[dates addObject:dateContainer];
 				}
 			}
-			if([[element tagName] isEqualToString:@"td"] && !skipDate){
-				foundDescription = NO;
-				menuItem = [[NSMutableDictionary alloc] init];
-				[menuItem setObject:[element content] forKey:@"meal"];
-			}
-			if([[element tagName] isEqualToString:@"span"] && !foundDescription && !skipDate){
-				foundDescription = YES;
-				[menuItem setObject:[element content] forKey:@"description"];
-                [self guessMealPropertiesForMenuItem:&menuItem];
-                [menus addObject:menuItem];
+			if([[element tagName] isEqualToString:@"span"]  && !skipDate){
+                if([@"stwm-artname" isEqualToString: [element attributes][@"class"]]) {
+                    foundDescription = NO;
+                    menuItem = [[NSMutableDictionary alloc] init];
+                    [menuItem setObject:[element content] forKey:@"meal"];
+                } else if(!foundDescription) {
+                    foundDescription = YES;
+                    [menuItem setObject:[element content] forKey:@"description"];
+                    [self guessMealPropertiesForMenuItem:&menuItem];
+                    [menus addObject:menuItem];
+                }
 			}
 		}
         if(dateContainer != nil) [dateContainer setObject:menus forKey:@"dishes"];
